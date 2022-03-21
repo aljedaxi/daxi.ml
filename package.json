@@ -2,7 +2,7 @@
   "name": "newer-daxi-ml",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "SEE LICENSE.TXT",
+  "license": "SEE LICENSE IN LICENSE.TXT",
   "scripts": {
     "dev": "npx @11ty/eleventy --serve --port=8011",
     "build": "npx @11ty/eleventy"
