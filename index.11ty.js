@@ -1,4 +1,4 @@
-const {map, chain, pipe, prop, filter, keys, joinWith} = require ('sanctuary')
+const {map, pipe, keys, joinWith} = require ('sanctuary')
 const neq = x => y => x != y
 const isntThisFile = p => p.fileSlug !== 'index'
 const joinyMap = f => pipe ([
