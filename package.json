@@ -1,0 +1,10 @@
+{
+  "name": "newer-daxi-ml",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "SEE LICENSE.TXT",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "sanctuary": "^3.1.0"
+  }
+}
