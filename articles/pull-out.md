@@ -3,6 +3,7 @@ layout: layout.11ty.js
 published: 2020-02-19
 title: pull out
 tags:
+  - post
   - poetry
 ver: 1
 ---

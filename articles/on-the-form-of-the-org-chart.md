@@ -3,6 +3,7 @@ layout: layout.11ty.js
 published: 2020-11-25
 title: 'the form of the org chart'
 tags:
+  - post
   - organizational cybernetics
   - business
 ver: 1
