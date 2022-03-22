@@ -1,4 +1,17 @@
-const fullBleed = `.wrapper {display: grid; grid-template-columns: 1fr min(70ch, 100%) 1fr; } .wrapper > * { grid-column: 2; } .full-bleed { width: 100%; grid-column: 1 / 4;}`
+const {minify} = require ('./css')
+const fullBleed = `
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr min(70ch, 100%) 1fr;
+	}
+	.wrapper > * {
+		grid-column: 2;
+	}
+	.full-bleed {
+		width: 100%;
+		grid-column: 1 / 4;
+	}
+`
 const style = [fullBleed, `a {color: #de0000}`].join ('\n')
 const Main = props => {
 	const {title, content, date, genre, ver} = props
@@ -7,7 +20,7 @@ const Main = props => {
 		<html>
 			<head>
 				<title>${title}</title>
-				<style>${style}</style>
+				<style>${minify (style)}</style>
 			</head>
 			<body>
 				<main class='wrapper'>
