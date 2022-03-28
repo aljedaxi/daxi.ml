@@ -55,6 +55,8 @@ const prepareMetadataForZotero = pipe ([
 
 // TODO https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/educationLevel
 // TODO https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/tableOfContents
+// TODO put this rss feed thing at the top level; create a template hierarchy
+const rssFeedLink = `<link rel='alternate' type='application/rss+xml' href='/feed.xml' title='rss feed'/>`
 const Main = props => {
 	const {title, content, published, tags, ver} = props
 	return (`
@@ -63,6 +65,7 @@ const Main = props => {
 			<head>
 				<title>${title}</title>
 				<style>${minify (style)}</style>
+				${rssFeedLink}
 				<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
 				${prepareMetadataForZotero (props)}
 			</head>
