@@ -40,4 +40,7 @@ const render = props => {
 		</html>
 	`)
 }
-module.exports = {render, data: {title: 'daxi.ml'}}
+module.exports = {
+	data: {title: 'daxi.ml', layout: 'mainLayout.11ty.js'},
+	render, 
+}

@@ -9,6 +9,7 @@ const render = props => {
 			<head>
 				<style>a{color:#de0000}</style>
 				<title>${title}</title>
+				<link rel='icon' href='/favicon.ico' sizes='any'>
 				${rssFeedLink}
 				${articleMeta (props)}
 			</head>
