@@ -5,7 +5,7 @@ const joinyMap = f => pipe ([
 	map (f),
 	joinWith ('\n'),
 ])
-const Main = props => {
+const render = props => {
 	const {title, content, date, genre, ver, collections} = props
 	const tags = keys (collections).filter (neq ('all'))
 	return (`
@@ -40,4 +40,4 @@ const Main = props => {
 		</html>
 	`)
 }
-module.exports = Main
+module.exports = {render, data: {title: 'daxi.ml'}}
