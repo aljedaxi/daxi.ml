@@ -8,9 +8,10 @@ tags:
   - business
 ver: 1
 ---
-a picture of something is a representation of 
-a series of measurements, arranged such that 
-the picture'sgestalt recapitulates 
+```
+a picture of something is a representation of
+a series of measurements, arranged such that
+the picture's  gestalt recapitulates
 the pictured's gestalt.
 
 an org chart is a picture of an org.
@@ -32,3 +33,4 @@ bounded only by the measurements in our directory (
 ).
 
 (somebody give me a problem so i can write some examples)
+```
