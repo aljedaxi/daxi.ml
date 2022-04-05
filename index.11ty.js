@@ -13,6 +13,11 @@ const render = props => {
 		<html>
 			<head>
 				<title>${title}</title>
+				<style>
+					body{background-image:url(/favicon.ico);background-size:150px}
+					main>*{background-color:black;color:white;width:fit-content;padding:8px}
+					a{color:#d2738a}
+				</style>
 			</head>
 			<body>
 				<main>
