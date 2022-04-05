@@ -4,13 +4,15 @@ published: 2022-03-25
 title: my works
 ver: 1
 monospaced: False
-tags:
-  - programming
-  - poetry
+tags: []
 ---
 
+## me
+
+i am a <a href="https://laboriacuboniks.net/manifesto/xenofeminism-a-politics-for-alienation/">xenofeminist</a>; i use <a href="https://colemak.com/Unix">colemak</a> (&amp; you should too); 
+
 ## published poetry
-  - [god's in barcelona](https://www.adbusters.org/article/abandonment)
+  - [god's in barcelona](https://www.adbusters.org/article/abandonment). the image at the top (which wasn't chosen by me) is of a room in the Fundació Joan Miró in Barcelona.
 
 ## random web apps
   - i put together [a little web app](http://its-dare-et-recipe.surge.sh/) that can read arbitrary coffee recipes, and display them in a readable way; it features a timer and a g/water <=> g/coffee calculator
