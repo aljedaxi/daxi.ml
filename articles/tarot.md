@@ -11,15 +11,15 @@ tags:
 
 ## a leading in, induction, introduction
 
-this won&apos;t help you make money, or pick up femmes with split dyed hair. look elsewhere. if you just want enlightenment, try Buddhist meditation. if you want a spooky experience, try a seance or a ouija board.you can't read the future through the cards, or summon demons, or anything like that. try data science. 
+this won&apos;t help you make money, or pick up femmes with split dyed hair. if you just want enlightenment, seems best to <a href="https://suttacentral.net/snp1.3?view=normal">wander alone</a>. if you want a spooky experience, try a seance or a ouija board.you can't read the future through the cards, or summon demons, or anything like that. you&apos;ll&apos;ve better luck w data science. 
 
-this will help you help your friends understand their problems, and you understand the problem form.if you've ever sat on a balcony watching a pink sun set on a pink city---and you, with your pink gin and pink heart---thought "they should have sent a poet", then this may be for you.
+this will help you help your friends understand their problems, and you understand the problem form.if you've ever sat on a balcony watching a pink sun set on a pink city---and you, with your pink gin and pink heart---&amp; thought "they should have sent a poet", then this may be for you.
 
-tarot is, at its heart, the Socratic dialectic. something stirs within your interlocutor&apos;s soul/psyche/un-sub-conscious/mind-brain, and you're going to enlighten it.
+tarot is, at its heart, the Socratic dialectic. something stirs within your interlocutor&apos;s soul/psyche/un-sub-conscious/mind-brain, and you're going to reveal it.
 
 ## materials
 
-firstly, you're going to need to aquire the alchemical attitude. any sufficiently serious left hand tradition will do. hermetic descendents are customary, but it wont work for you if it doesn't resonate with you.
+firstly, you're going to need to aquire the alchemical attitude[^1]. any sufficiently serious left hand tradition will do. hermetic descendents are customary, but it wont work for you if it doesn't resonate with you.
 
 next, you'll need a deck. keep searching until you find one that speaks to you. you don't need understand the words it's saying, just feel that there are words there. it wont work for you if it doesn't resonate with you.
 
@@ -29,7 +29,7 @@ never do book readings. i've never read what *x* card is supposed to "mean", and
 
 i always read around a question, a theme. your interlocutor doesn't have to tell you what that theme is, they just need to have it in their mind. 
 
-you'll need a tablecloth, incense, candles, darkness, and music. all of these are used to engender (channel) the alchemical attitude---that wont happen the atmosphere doesn't resonate with you. you mustn't use any of the items (except perhaps the candles) in any other circumstances, unless you're really good at dropping in and out of mental states (<10s). i keep all my materials in a box, where they all pick up the scent of the incense.
+you'll need a tablecloth, incense, candles, darkness, and music. all of these are used to engender (channel) the alchemical attitude---that wont happen the atmosphere doesn't resonate with you. you mustn't use any of the items (except perhaps the candles) in any other circumstances, unless you're really good at dropping in and out of mental states (&lt;10s). i keep all my materials in a box, where they all pick up the scent of the incense.
 
 ## the reading
 
@@ -67,15 +67,17 @@ what's really important are four lines of force: four gestalten, four narratives
 * the **unconscious manifests consciously** from 3 => 2 => 10
 * the **present evolves into/around 7**, through 5 => 2 => 7
 
-the majority of your time will be spent talking about these narratives. you and the cards are the Socratic midwife, coaxing these narratives---these understandings---out of the individual. you aren't telling people who they are, or their future, or anything like that. *you don't know that. the cards don't know that. the cards don't *know* anything. RNGesus doesn't *know* anything. there's no magic, only magick---yeah?* allegory of the alethiometer. 
+the majority of your time will be spent talking about these narratives. you and the cards are the Socratic midwife, coaxing these narratives---these understandings---out of the individual. you aren&apos;t telling people who they are, or their future, or anything like that. *you don&apos;t know that. the cards don&apos;t know that. the cards don&apos;t *know* anything. RNGesus doesn&apos;t *know* anything. there&apos;s no magic, only magick---yeah?* allegory of the alethiometer. 
 
-you're trying to help someone understand their own problems.
+you&apos;re trying to help someone understand their own problems.
 
-it takes maybe 0.5-2 hours to fully explore the spread. after that, i like to ask my interlocutor if they feel ready to tackle their question, if the boundaries have been delineated. if not, it's time for another reading.
+it takes maybe 0.5-2 hours to fully explore the spread. after that, i like to ask my interlocutor if they feel ready to tackle their question, if the boundaries have been delineated. if not, it&apos;s time for another reading.
 
 if so, blow out the candles, turn off the music, and let the room sit in silent darkness for a bit. let the mind depressurize, or your interlocutor will get the bends.
 
 ## post reading
 
-now that you understand the problem, solve it.
+now that you understand the problem, all that&apos;s left&apos;s to solve it.
+
+[^1]: the alchemical mode is embodied in the magician. if you&apos;ve got a good deck you can learn oceans from pouring your consciousness over that card like a jazz cat.
 
