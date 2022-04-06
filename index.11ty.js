@@ -22,7 +22,7 @@ const render = props => {
 			<body>
 				<main>
 					<h1><a href="/">daxi.ml</a>: a cool site for cool cats</h1>
-					<h2>made by <a href="/collections/my-works">me</a>!!!! i have over <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">verified</a> fans!!</h2>
+					<h2>made by <a href="/collections/my-works">me</a>!!!! i have over 9000 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">verified</a> fans!!</h2>
 					<p>
 						Check out some cool text based content:
 						<ul>
