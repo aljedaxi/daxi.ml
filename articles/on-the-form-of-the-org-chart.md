@@ -37,7 +37,7 @@ bounded only by the measurements in our directory (
 
 ## examples
 
-tabbed interfaces have all the rich spatiality of a book (ie, none). but we can use this to visualize each tab as stacked upon one another; re-used components and forms cut through the pages like mountains layers of 3d topography. stacking reveals <a href="/towards-concern">cross cutting concerns</a>, zones of code reuse, entanglements, &amp;c. one might splay the pages out in a grid if each page <a href="https://en.wikipedia.org/wiki/Good_regulator">operates on</a> completely different data.
+tabbed interfaces have all the rich spatiality of a book (ie, none). but we can use this to visualize each tab as stacked upon one another; re-used components and forms cut through the pages like mountains layers of 3d topography. stacking reveals <a href="articles/towards-concern/">cross cutting concerns</a>, zones of code reuse, entanglements, &amp;c. one might splay the pages out in a grid if each page <a href="https://en.wikipedia.org/wiki/Good_regulator">operates on</a> completely different data.
 
 maps of things like "who are invited to which meetings", "who speaks to one another in which meetings", maps of connections, question the departments form, eg, what variety is to be attenuated. departments are terms of the upfront cost of training, developing the particular expertises that are divided by the division of labour. who needs to schedule time to speak to whom? who has so much to discuss they must have a meeting? which costs are seen by whom?
 
