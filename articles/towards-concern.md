@@ -1,7 +1,7 @@
 ---
 layout: layout.11ty.js
 published: 2022-04-05
-title: Toward Concern
+title: toward Concern
 tags:
   - post
   - programming
