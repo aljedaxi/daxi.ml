@@ -14,32 +14,32 @@ const render = props => {
 			<head>
 				<title>${title}</title>
 				<style>
-					body{background-image:url(/favicon.ico);background-size:150px}
+					body{background-image:url(/favicon.ico);background-size:1200px}
 					main>*{background-color:black;color:white;width:fit-content;padding:8px}
 					a{color:#d2738a}
 				</style>
 			</head>
 			<body>
 				<main>
-					<h1><a href="/">daxi.ml</a>: a cool site for cool cats</h1>
-					<h2>made by <a href="/collections/my-works">me</a>!!!! i have over 9000 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">verified</a> fans!!</h2>
 					<p>
-						Check out some cool text based content:
-						<ul>
-							${joinyMap (tag => (`
-								<li>
-									${tag}
-									<ul>
-										${joinyMap (({url, data: {title}}) => (`
-											<li>
-												<a href="${url}">${title}</a>
-											</li>
-										`)) (collections[tag])}
-									</ul>
-								</li>
-							`)) (tags)}
-						</ul>
+						i am not. i never have been.
 					</p>
+					<dl>
+						${joinyMap (tag => (`
+							<dt>
+								${tag}
+							</dt>
+							<dd>
+								<ul>
+									${joinyMap (({url, data: {title}}) => (`
+										<li>
+											<a href="${url}">${title}</a>
+										</li>
+									`)) (collections[tag])}
+								</ul>
+							</dd>
+						`)) (tags)}
+					</dl>
 				</main>
 			</body>
 		</html>
