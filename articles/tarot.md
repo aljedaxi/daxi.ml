@@ -9,6 +9,8 @@ tags:
   - how to
 ---
 
+[[tableofcontents]]
+
 ## a leading in, induction, introduction
 
 this won&apos;t help you make money, or pick up femmes with split dyed hair. if you just want enlightenment, seems best to <a href="https://suttacentral.net/snp1.3?view=normal">wander alone</a>. if you want a spooky experience, try a seance or a ouija board.you can't read the future through the cards, or summon demons, or anything like that. you&apos;ll&apos;ve better luck w data science. 
