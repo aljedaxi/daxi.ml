@@ -5,7 +5,7 @@ title: pull out
 tags:
   - post
   - poetry
-ver: 1
+ver: 2
 ---
 
 <a href="https://www.discogs.com/release/3404336-Doldrums-Empire-Sound">subject</a>
@@ -14,7 +14,7 @@ ver: 1
 two faces; no eyes; no mouth; nostrils; no
 escaping; they fall
 multiply, multip-ly, multiplicious, mulling
-over heels ;they fall
+over heels ;they fall; they
 can muster the might to make a poem;pulling
 no work;they fall
 into the poetry; into the sound of
