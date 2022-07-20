@@ -22,7 +22,7 @@ const render = props => {
 			<body>
 				<main>
 					<p>
-						i am not. i never have been.
+						i don't think there's a single me, you know?
 					</p>
 					<dl>
 						${joinyMap (tag => (`
