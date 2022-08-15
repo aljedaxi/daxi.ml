@@ -1,7 +1,7 @@
 ---
 layout: layout.11ty.js
+published: 2015-12-17
 title: trans.tex
-published: who knows lol
 tags:
   - post
   - prose
