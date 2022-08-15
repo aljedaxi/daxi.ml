@@ -9,9 +9,9 @@ tags:
   - programming
 ---
 
-the adage i most often hear is "you call a library; a framework calls you (your code)" (which more of a heuristic than a definition). let's roll with that for a second.
+the adage i most often hear is "you call a library; a framework calls you (your code)" (which more of a heuristic than a definition). let's roll with that.
 
-let's take a look at `index.js` for a second:
+here's the `index.js` of a new `create-react-app` app:
 
 ```js
 import React from 'react'
