@@ -5,6 +5,13 @@ const joinyMap = f => pipe ([
 	map (f),
 	joinWith ('\n'),
 ])
+const titles = [
+	'i don\'t think there\'s a single me, you know?',
+	'sometimes i feel <a href="https://www.youtube.com/watch?v=t5lKa-a8rPs">i\'ve lived a thousand lives</a>',
+	'i am not',
+	'i have nothing witty to say. please try again.',
+	'welcome to my homepage! you can have fun here!',
+]
 const render = props => {
 	const {title, content, date, genre, ver, collections} = props
 	const tags = keys (collections).filter (neq ('all'))
@@ -21,8 +28,8 @@ const render = props => {
 			</head>
 			<body>
 				<main>
-					<p>
-						i don't think there's a single me, you know?
+					<p id='title'>
+						spinner
 					</p>
 					<dl>
 						${joinyMap (tag => (`
@@ -42,6 +49,7 @@ const render = props => {
 					</dl>
 				</main>
 			</body>
+			<script>document.querySelector('#title').innerHTML = ${JSON.stringify(titles)}[Math.floor(Math.random() * ${titles.length})]</script>
 		</html>
 	`)
 }
