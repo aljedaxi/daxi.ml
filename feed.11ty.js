@@ -35,7 +35,7 @@ const render = props => {
         <title>${post.data.title}</title>
         <link href="${post.url}"/>
         ${post.updated || post.published
-          ? `<updated>${post.updated ?? post.published ?? }</updated>`
+          ? `<updated>${post.updated ?? post.published}</updated>`
           : ''}
         <id>${post.url}</id>
         <content type="html">${post.templateContent}</content>
