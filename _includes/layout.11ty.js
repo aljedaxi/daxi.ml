@@ -26,6 +26,12 @@ const footer = `
 	}
 `
 const texy = `
+	.sm {
+		font-variant: small-caps;
+	}
+	blockquote {
+		margin: 5pt 10pt;
+	}
 	p {
 		text-indent: 10pt;
 		margin: 0;
