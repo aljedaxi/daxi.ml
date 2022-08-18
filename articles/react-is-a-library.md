@@ -103,7 +103,7 @@ dude i never should have read Heidegger i can't *not* write like a saucy pedanti
 
 ## appendix B: Heidegger spends the entire essay "What is called thinking" talking about "call" and never getting to "thinking"
 
-exploring the word "code" might be a bit "thought-provoking"[1, p.371] when placed next to the questions posed above: the difference in the understanding of functions between functional and [structured](https://en.wikipedia.org/wiki/Structured_programming) programmers. if that doesn't interest you, click away or something, i dunno. go play dark souls.
+exploring the word "call" might be a bit "thought-provoking"[1, p.371] when placed next to the questions posed above: the difference in the understanding of functions between functional and [structured](https://en.wikipedia.org/wiki/Structured_programming) programmers. if that doesn't interest you, click away or something, i dunno. go play dark souls.
 
 I must note that Heidegger wrote in German. The following are excerpts from a translation of his essay "What is called thinking/What calls for thinking?", "Was Heisst Denken?".
 
