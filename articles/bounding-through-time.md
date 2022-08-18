@@ -78,9 +78,9 @@ if all our words must bend and rust
 if all this whirls away 
 i trust
 
-whatever's left of me, of my
-stream of spry sincerity,
-my endless glee, without goodbye,
+whatever's left of my—of me–
+this stream of spry sincerity,
+this glen of glee, without goodbye,
 with all the try i've left, i'll see
 
 you,
