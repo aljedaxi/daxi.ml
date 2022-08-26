@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+echo "potential webs to mention:"
+git diff --cached | grep 'http' | deno run ./getUrls.mjs
+exit 1

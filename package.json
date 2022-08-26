@@ -5,7 +5,8 @@
   "license": "SEE LICENSE IN LICENSE.TXT",
   "scripts": {
     "dev": "npx @11ty/eleventy --serve --port=8011",
-    "build": "npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
@@ -17,6 +18,7 @@
     "sanctuary": "^3.1.0"
   },
   "devDependencies": {
-    "markdown-it-table-of-contents": "^0.6.0"
+    "markdown-it-table-of-contents": "^0.6.0",
+    "husky": "^8.0.0"
   }
 }
