@@ -16,6 +16,8 @@ const render = props => {
 				${rssFeedLink}
 				${articleMeta (props)}
 				${socials.map (href => `<link href="${href}" rel="me">`).join('')}
+				<link rel="webmention" href="https://webmention.io/daxi.ml/webmention" />
+				<link rel="pingback" href="https://webmention.io/daxi.ml/xmlrpc" />
 				<title>${title}</title>
 				<style>
 					body{background-image:url(/favicon.ico);background-size:1200px}
