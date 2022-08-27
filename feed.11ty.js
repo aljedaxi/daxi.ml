@@ -38,6 +38,7 @@ const formatItem = ({data, url}) => c ('item') () ([
   `<link>daxi.ml${url}</link>`,
   getDate ({data}) ? c ('updated') () (getDate ({data})) : ''
 ])
+const trace = s => (console.log(s), s)
 const render = props => {
   const {collections, metadata} = props
   const {post, posts} = collections
@@ -52,7 +53,7 @@ const render = props => {
 <copyright>peer production license</copyright>
 <generator>ViperMADEthisBEAt</generator>
 <docs>https://www.rssboard.org/rss-specification</docs>
-${joinMap (formatItem) (post.sort ((p1, p2) => getDate(p1) > getDate(p2)))}
+${joinMap (formatItem) (post.sort ((p1, p2) => getDate(p1) > getDate(p2) ? 1 : -1))}
     `)
   ])
   return `<?xml version="1.0" encoding="utf-8"?>${rss}`.trim ()
