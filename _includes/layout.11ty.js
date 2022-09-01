@@ -7,6 +7,7 @@ const fullBleed = `
 	.wrapper {
 		display: grid;
 		grid-template-columns: 1fr min(70ch, 100%) 1fr;
+		background: white;
 	}
 	.wrapper > * {
 		grid-column: 2;
