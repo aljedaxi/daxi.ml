@@ -12,7 +12,7 @@ const render = async props => {
 			...(otherLinks.length ? {'further reading': otherLinks.map (s =>`<ul>${s}</ul>`).join ('')} : {}),
 		}).map (s => `\t\t\t\t\t\t\t${s}`).join ('')}</dl>`
 		const heading = `<h2>${name}${sub_title ? `<br/>${sub_title}` : ''} — ${publish_date}</h2>`
-		listOfBooks.push(`<li>${heading}${dBlock}</li>`)
+		listOfBooks.push(`<li>${heading}${dBlock}${metadata}</li>`)
 	}
 
 	return (`
@@ -28,9 +28,6 @@ const render = async props => {
 }
 
 module.exports = {
-	get data() {
-		return {"layout":"layout.11ty.js","published":"2022-09-05","updated":"2022-09-05","title":"books i have","ver":1,"monospaced":"False","tags":[]}
-	},
+	data: {"layout":"layout.11ty.js","published":"2022-09-06","updated":"2022-09-06","title":"books i have","ver":1,"monospaced":"False","tags":[]},
 	render,
 }
-

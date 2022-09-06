@@ -4,12 +4,12 @@
   "main": "index.js",
   "license": "SEE LICENSE IN LICENSE.TXT",
   "scripts": {
-    "dev": "npx @11ty/eleventy@2.0.0-canary.15 --serve --port=8011",
-    "build": "npx @11ty/eleventy@2.0.0-canary.15",
+    "dev": "npx @11ty/eleventy --serve --port=8011",
+    "build": "npx @11ty/eleventy",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@11ty/eleventy": "2.0.0-canary.15",
+    "@11ty/eleventy": "1.0.2",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "clean-css": "^5.2.4",
     "date-fns": "^2.28.0",
