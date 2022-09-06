@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "SEE LICENSE IN LICENSE.TXT",
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve --port=8011",
-    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy@2.0.0-canary.15 --serve --port=8011",
+    "build": "npx @11ty/eleventy@2.0.0-canary.15",
     "prepare": "husky install"
   },
   "dependencies": {
