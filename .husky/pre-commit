@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 echo "potential webs to mention:"
-git diff --cached | grep 'http' | deno run ./getUrls.mjs
+git diff --cached | grep 'http' | deno run ./src/_getUrls.js
 echo "potential mentions from webs:"
 source .env && curl -s $MENTIONS_FEED | xq '.feed'
