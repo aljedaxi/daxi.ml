@@ -4,10 +4,14 @@ const fullBleed = `
 	.wrapper {
 		display: grid;
 		grid-template-columns: 1fr min(70ch, 100%) 1fr;
-		background: white;
+		background: transparent;
+		width: 100%;
 	}
 	.wrapper > * {
 		grid-column: 2;
+		background: black;
+		padding: 8px;
+		color: white;
 	}
 	.full-bleed {
 		width: 100%;
@@ -56,9 +60,11 @@ export default props => {
 							: ''
 					}
 				</header>
-				{children}
+				<main>
+					{children}
+				</main>
 				<footer>
-					<a href="/">main site</a>
+					<a href="/">esc</a>
 				</footer>
 			</article>
 		</>

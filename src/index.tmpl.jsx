@@ -29,10 +29,10 @@ export default props => {
 	const allTags = new Set (allPages.flatMap (p => p.data.tags))
 	return (
 		<body>
+			<header id='title'>
+				spinner
+			</header>
 			<main>
-				<p id='title'>
-					spinner
-				</p>
 				<dl>
 					{map(tag => (
 						<>

@@ -10,7 +10,6 @@ export default props => {
 		<html>
 			<head>
 				<meta charset='utf-8'/>
-				<style>a{color:#de0000}</style>
 				<title>${title}</title>
 				<link rel='icon' href='/public/favicon.ico' sizes='any'>
 				${rssFeedLink}
@@ -21,7 +20,7 @@ export default props => {
 				<title>${title}</title>
 				<style>
 					body{background-image:url(/public/favicon.ico);background-size:1200px}
-					main>*{background-color:black;color:white;width:fit-content;padding:8px}
+					body>*{background-color:black;color:white;width:fit-content;padding: 8px;}
 					a{color:#d2738a}
 				</style>
 			</head>
