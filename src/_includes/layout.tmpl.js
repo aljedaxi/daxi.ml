@@ -1,5 +1,3 @@
-import S from 'https://esm.sh/sanctuary'
-const {encase, pipe, map, joinWith, Right, rights, either, K} = S
 import {minify} from './css.js'
 
 const fullBleed = `
