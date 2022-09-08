@@ -34,6 +34,12 @@ const texy = `
 	blockquote {
 		margin: 5pt 10pt;
 	}
+	pre {
+		margin: 5pt 10pt;
+	}
+	h1 {
+		margin: 0 0 5pt 0;
+	}
 	p {
 		text-indent: 10pt;
 		margin: 0;
@@ -59,6 +65,8 @@ export default props => {
 							? <time itemprop='datePublished' datetime={new Date (published).toISOString()}>published {new Date (published).toISOString().split('T')[0]}</time>
 							: ''
 					}
+					<br />
+					<ul className="csv">{tags.map (t => <li><a href={`/tag/${t}`}>{t}</a></li>)}</ul>
 				</header>
 				<main>
 					{children}

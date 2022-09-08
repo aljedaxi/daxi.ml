@@ -22,6 +22,10 @@ export default props => {
 					body{background-image:url(/public/favicon.ico);background-size:1200px}
 					body>*{background-color:black;color:white;width:fit-content;padding: 8px;}
 					a{color:#d2738a}
+					ul.csv { display: inline; list-style: none; margin: 0; padding: 0; }
+					ul.csv li { display: inline; }
+					ul.csv li:after { content: ", "; }
+					ul.csv li:last-child:after { content: ""; }
 				</style>
 			</head>
 			<body>

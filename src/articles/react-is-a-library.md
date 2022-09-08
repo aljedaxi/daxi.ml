@@ -8,6 +8,7 @@ tags:
   - post
   - react
   - programming
+  - S tier
 ---
 
 [[tableofcontents]]

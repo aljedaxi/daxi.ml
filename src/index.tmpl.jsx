@@ -19,38 +19,28 @@ export const published = new Date(2022, 3, 21)
 export const title = 'daxi.ml'
 export const layout = 'mainLayout.tmpl.js'
 export const url = '/'
+const noShows = new Set (['S tier', 'post'])
 export default props => {
 	const {search} = props
-	const allPages = search.pages ('post')
-	const pagesByTag = allPages.reduce ((map, p) => {
-		p.data.tags?.forEach(t => void map.set (t, [...map.get (t) ?? [], p]))
-		return map
-	}, new Map())
-	const allTags = new Set (allPages.flatMap (p => p.data.tags))
+	const goodPages = search.pages ("'S tier'")
 	return (
 		<body>
 			<header id='title'>
 				spinner
 			</header>
 			<main>
-				<dl>
-					{map(tag => (
-						<>
-							<dt>
-								{tag}
-							</dt>
-							<dd>
-								<ul>
-									{map (({src: {path}, data: {title}}) => (
-										<li>
-											<a href={path}>{title}</a>
-										</li>
-									)) (pagesByTag.get (tag))}
-								</ul>
-							</dd>
-						</>
-					)) (allTags)}
-				</dl>
+				<h2>These are articles are good:</h2>
+				<ul>
+					{map (({src: {path}, data: {title, tags}}) => (
+						<li>
+							<a href={path}>{title}</a> — <ul aria-label='tags' className='csv'>
+								{tags
+									.filter (t => !noShows.has (t))
+									.map(t => <li><a href={`/tag/${t}`}>{t}</a></li>)}
+							</ul>
+						</li>
+					)) (goodPages)}
+				</ul>
 			</main>
 			<script dangerouslySetInnerHTML={{__html: `document.querySelector('#title').innerHTML = ${JSON.stringify(titles)}[Math.floor(Math.random() * ${titles.length})]`}}></script>
 		</body>
