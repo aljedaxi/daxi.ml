@@ -1,7 +1,7 @@
-const {isLeft, encase, pipe, map, joinWith, Right, rights, either, K} = require ('sanctuary')
-const {minify} = require ('./css')
-const {formatISOWithOptions} = require ('date-fns/fp')
-const coolFormat = encase (formatISOWithOptions ({representation: 'date'}))
+import {S} from './layout.tmpl.js'
+const {isLeft, encase, pipe, map, joinWith, Right, rights, either, K} = S
+import {minify} from './css.js'
+const coolFormat = s => new Date (s).toISOString()
 
 const dcDate = date => ({'DC.date': {content: date}})
 
@@ -13,7 +13,7 @@ const formatAsMeta = pipe ([
 	joinWith ('\n'),
 ])
 
-const articleMeta = props => {
+export const articleMeta = props => {
 	const {title, published} = props
 	if (!title || (typeof published === 'string')) return ''
 	return `
@@ -25,13 +25,11 @@ const articleMeta = props => {
 			'DC.audience': {content: 'fun and nice people'},
 			'DC.license': {content: peerProductionURI},
 			'DC.rights': {content: peerProductionURI},
-			...either (K ({})) (dcDate) (coolFormat (published)),
+			...coolFormat (published) ? dcDate (published) : {},
 		})}
 	`
 }
 // TODO https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/educationLevel
 // TODO https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/tableOfContents
 
-const peerProductionURI = 'https://github.com/aljedaxi/peer_production_license/blob/master/plain_text.txt'
-
-module.exports = {peerProductionURI, articleMeta}
+export const peerProductionURI = 'https://github.com/aljedaxi/peer_production_license/blob/master/plain_text.txt'

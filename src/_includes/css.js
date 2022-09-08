@@ -1,4 +1,4 @@
-const CleanCss = require ('clean-css')
+import CleanCss from 'https://esm.sh/clean-css'
 const options = {
 	level: {
 		2: {
@@ -7,5 +7,4 @@ const options = {
 	}
 }
 const obj = new CleanCss (options)
-const minify = s => obj.minify (s).styles
-module.exports = {minify}
+export const minify = s => obj.minify (s).styles

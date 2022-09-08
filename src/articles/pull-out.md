@@ -8,7 +8,7 @@ tags:
 ver: 2
 ---
 
-<a href="https://www.discogs.com/release/3404336-Doldrums-Empire-Sound">subject</a>
+[based on](/public/endless-winter.png) [this album](https://www.youtube.com/watch?v=JHc407diipc&list=OLAK5uy_kk8FqYa42ki53eLjkM9J5lUDzf6XXLtUM&index=1), in particular, [this song](https://www.youtube.com/watch?v=qaLY7B4YH_Q&list=OLAK5uy_kk8FqYa42ki53eLjkM9J5lUDzf6XXLtUM&index=4).
 
 <pre>
 two faces; no eyes; no mouth; nostrils; no
