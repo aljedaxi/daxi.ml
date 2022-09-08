@@ -1,5 +1,5 @@
 ---
-layout: layout.11ty.js
+layout: layout.tmpl.js
 published: 2020-11-25
 title: 'the form of the org chart'
 tags:

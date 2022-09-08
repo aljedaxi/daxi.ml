@@ -1,17 +1,4 @@
-const data = {
-  "permalink": "feed.xml",
-  "eleventyExcludeFromCollections": true,
-  "metadata": {
-    "title": "daxi.ml",
-    "subtitle": "philosophy and high speed computing machines and  and shit lol",
-    "url": "http://daxi.ml/",
-    "feedUrl": "http://daxi.ml/feed.xml",
-    "author": {
-      "name": "daxi",
-      "email": "alje@daxi.ml"
-    }
-  }
-}
+export const url = '/feed.xml'
 
 const joinMap = f => xs => xs.map (f).join ('')
 
@@ -38,10 +25,18 @@ const formatItem = ({data, url}) => c ('item') () ([
   `<link>daxi.ml${url}</link>`,
   getDate ({data}) ? c ('updated') () (getDate ({data})) : ''
 ])
-const trace = s => (console.log(s), s)
-const render = props => {
-  const {collections, metadata} = props
-  const {post, posts} = collections
+const metadata = {
+  "title": "daxi.ml",
+  "subtitle": "philosophy and high speed computing machines and  and shit lol",
+  "url": "http://daxi.ml/",
+  "feedUrl": "http://daxi.ml/feed.xml",
+  "author": {
+    "name": "daxi",
+    "email": "alje@daxi.ml"
+  }
+}
+export default props => {
+  const {search} = props
   const {title, subtitle, feedUrl, url, author} = metadata
   const rss = c ('rss') ({version: '2.0'}) ([
     c ('channel') () (`
@@ -53,10 +48,8 @@ const render = props => {
 <copyright>peer production license</copyright>
 <generator>ViperMADEthisBEAt</generator>
 <docs>https://www.rssboard.org/rss-specification</docs>
-${joinMap (formatItem) (post.sort ((p1, p2) => getDate(p1) > getDate(p2) ? 1 : -1))}
+${joinMap (formatItem) (search.pages ('type=posts', 'date=desc', 10))}
     `)
   ])
   return `<?xml version="1.0" encoding="utf-8"?>${rss}`.trim ()
 }
-
-module.exports = {render, data}

@@ -1,5 +1,5 @@
 ---
-layout: layout.11ty.js
+layout: layout.tmpl.js
 published: 2022-07-14
 updated: 2022-07-16
 title: react is still a library lol

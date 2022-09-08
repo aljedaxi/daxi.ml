@@ -1,5 +1,5 @@
 ---
-layout: layout.11ty.js
+layout: layout.tmpl.js
 published: 2020-02-19
 title: pull out
 tags:

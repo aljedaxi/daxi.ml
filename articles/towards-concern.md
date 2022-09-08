@@ -1,5 +1,5 @@
 ---
-layout: layout.11ty.js
+layout: layout.tmpl.js
 published: 2022-04-05
 title: toward Concern
 tags:
@@ -33,3 +33,13 @@ brownshirts march in. that's what they do. case in point:
 "climate change isn't something worth being concerned over. we [someone else] will fix it [for coastal cities] with tech." it's a concern for another. that big picture is for another; my big picture (just as big) is discovering how tech can solve the problem of another industry. my small picture is discovering how tech can solve this.
 
 but to focus on the minutiae of the black experience is to overcomplicate things. racism is being racist---slurs. microaggressions are beyond the scope of my concerns; a picture just as big, but other, another. my big picture is the horror of my impending cancellation.
+
+## A mild digression: doing dwelling being
+
+So i'm staying with my aunt, vacationing in Vancouver. One lunch break i meander down to Granville Island to buy a book of poetry or something. On the way i noticed a distillery, and, you know, working from home, i figured it didn't really matter if i took a little 10 minute digression. I walked out of there with a bottle of what is—to this day, still—my favorite vodka.
+
+i was, having walked back, not even tipsy. when i got back my aunt was like "u were drinking in the middle of the day?". and i was like "more like 'sipping', or 'tasting'". not to be pedantic, but those're just fully different *things*.
+
+the obvious case is the difference between *drinking alone* and *drinking socially*. i'd add to that *workshopping new cocktails*, *running a beer tasting*, *sipping a dry gin martini while reading Wallace Stevens on a balcony with a nice view on a hot summer day*. again, what one is *doing* isn't a function the quantity of liquid or alcohol; nor the precise quantity of inebriation; nor the formal qualities of lifting of the arm, the raising, tilting, draining of the glass. 
+
+i think it was about 2 days after that that i first tasted beer. about a week prior i'd had a cappuccino, cortado, espresso, and latte at revolver, using beans from the house of funk. turns out the house of funk *also* brews beer, and i think that's what's what allowed me to open myself up to beer. when i went to the house of funk, what i tasted wasn't just *beer*, the stereotype of beer, but [syncopation](https://www.houseoffunkbrewing.com/collections/beer/products/syncopation-4-pack-473ml-cans), that particular czech pilsner. i was able to be open to the beer—or perhaps the experiencing of the beer.

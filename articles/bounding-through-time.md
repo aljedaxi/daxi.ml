@@ -50,9 +50,9 @@
 #       - "soon.",
 #     date: '2020-02-13',
 #     ver: 2
-    
-layout: layout.11ty.js
+layout: layout.tmpl.js
 date: 2020-02-13
+published: 2020-02-13
 ver: 2
 title: 'bounding through time'
 tags:
