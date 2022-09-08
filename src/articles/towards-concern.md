@@ -1,5 +1,5 @@
 ---
-layout: layout.tmpl.js
+layout: layout.tmpl.jsx
 published: 2022-04-05
 title: toward Concern
 tags:

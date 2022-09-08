@@ -3,6 +3,11 @@
   "tasks": {
     "lume": "deno eval \"import 'lume/task.ts'\" --",
     "build": "deno task lume",
-    "serve": "deno task lume -s"
+    "serve": "deno task lume -s",
+    "dev": "deno task serve --port=8011"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "https://esm.sh/react@18.0.0"
   }
 }

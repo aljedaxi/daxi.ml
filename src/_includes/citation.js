@@ -1,7 +1,7 @@
-import {S} from './layout.tmpl.js'
-const {isLeft, encase, pipe, map, joinWith, Right, rights, either, K} = S
-import {minify} from './css.js'
+import {map} from '../index.tmpl.jsx'
 const coolFormat = s => new Date (s).toISOString()
+const pipe = fs => x => fs.reduce ((y, f) => f (y), x)
+const joinWith = s => xs => xs.join (s)
 
 const dcDate = date => ({'DC.date': {content: date}})
 

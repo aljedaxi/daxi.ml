@@ -1,5 +1,5 @@
 ---
-layout: layout.tmpl.js
+layout: layout.tmpl.jsx
 published: 2015-12-17
 title: trans.tex
 tags:

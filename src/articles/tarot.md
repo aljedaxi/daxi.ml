@@ -1,5 +1,5 @@
 ---
-layout: layout.tmpl.js
+layout: layout.tmpl.jsx
 title: how to do a tarot reading
 ver: 1
 published: 2020-11-29

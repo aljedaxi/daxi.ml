@@ -50,7 +50,7 @@
 #       - "soon.",
 #     date: '2020-02-13',
 #     ver: 2
-layout: layout.tmpl.js
+layout: layout.tmpl.jsx
 date: 2020-02-13
 published: 2020-02-13
 ver: 2

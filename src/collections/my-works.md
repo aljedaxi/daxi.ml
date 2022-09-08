@@ -1,5 +1,5 @@
 ---
-layout: layout.tmpl.js
+layout: layout.tmpl.jsx
 published: 2022-03-25
 title: my works
 ver: 1

@@ -1,5 +1,5 @@
 ---
-layout: layout.tmpl.js
+layout: layout.tmpl.jsx
 published: 2020-11-25
 title: 'the form of the org chart'
 tags:

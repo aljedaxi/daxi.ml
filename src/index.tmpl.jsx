@@ -1,4 +1,4 @@
-const map = f => xs => {
+export const map = f => xs => {
 	const ys = []
 	for (const x of xs) {
 		ys.push (f (x))
@@ -27,30 +27,32 @@ export default props => {
 		return map
 	}, new Map())
 	const allTags = new Set (allPages.flatMap (p => p.data.tags))
-	return (`
+	return (
 		<body>
 			<main>
 				<p id='title'>
 					spinner
 				</p>
 				<dl>
-					${joinyMap (tag => (`
-						<dt>
-							${tag}
-						</dt>
-						<dd>
-							<ul>
-								${joinyMap (({src: {path}, data: {title}}) => (`
-									<li>
-										<a href="${path}">${title}</a>
-									</li>
-								`)) (pagesByTag.get (tag))}
-							</ul>
-						</dd>
-					`)) (allTags)}
+					{map(tag => (
+						<>
+							<dt>
+								{tag}
+							</dt>
+							<dd>
+								<ul>
+									{map (({src: {path}, data: {title}}) => (
+										<li>
+											<a href={path}>{title}</a>
+										</li>
+									)) (pagesByTag.get (tag))}
+								</ul>
+							</dd>
+						</>
+					)) (allTags)}
 				</dl>
 			</main>
-			<script>document.querySelector('#title').innerHTML = ${JSON.stringify(titles)}[Math.floor(Math.random() * ${titles.length})]</script>
+			<script dangerouslySetInnerHTML={{__html: `document.querySelector('#title').innerHTML = ${JSON.stringify(titles)}[Math.floor(Math.random() * ${titles.length})]`}}></script>
 		</body>
-	`)
+	)
 }
