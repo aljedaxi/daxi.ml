@@ -29,7 +29,7 @@ export default props => {
 				spinner
 			</header>
 			<main>
-				<h2>These are articles are good:</h2>
+				<h2>These are articles that are good:</h2>
 				<ul>
 					{map (({src: {path}, data: {title, tags}}) => (
 						<li>
@@ -40,6 +40,11 @@ export default props => {
 							</ul>
 						</li>
 					)) (goodPages)}
+				</ul>
+				<h2>other things:</h2>
+				<ul>
+					<li><a href="/collections/books">i digitized my books</a></li>
+					<li><a href="/collections/my-works">i have put other stuff together that you can c here</a></li>
 				</ul>
 			</main>
 			<script dangerouslySetInnerHTML={{__html: `document.querySelector('#title').innerHTML = ${JSON.stringify(titles)}[Math.floor(Math.random() * ${titles.length})]`}}></script>
