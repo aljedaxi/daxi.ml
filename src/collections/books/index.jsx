@@ -30,7 +30,7 @@ export default async props => {
 			<header>
 				<h1>I have more books than i'd ideally like.</h1>
 				<p>the other problem is that i want them to have a good home. if you'd like to pore over my collection, now you can! this isn't even all of them!</p>
-				<p>i slapped some custom software together to digitize the collection. it's very unix, all streams, but if you'd like to try it out, it's <a href="https://github.com/aljedaxi/isbn-processor">here</a>.</p>
+				<p>i slapped some custom software together to digitize the collection. it's very unix, all streams, but if you'd like to try it out, it's <a href="https://github.com/aljedaxi/isbn-processor">here</a>. if you'd filter these data, check out the <a href="https://raw.githubusercontent.com/aljedaxi/daxi.ml/main/src/_data/books.ndjson">ndjson this page is based off of</a>.</p>
 			</header>
 			<main>
 				<ul>
