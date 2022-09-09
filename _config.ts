@@ -3,6 +3,13 @@ import jsx from "lume/plugins/jsx.ts"
 import footnote from "https://jspm.dev/markdown-it-footnote"
 import anchor from "https://jspm.dev/markdown-it-anchor"
 import toc from "https://jspm.dev/markdown-it-table-of-contents"
+import {readLines} from "https://deno.land/std@0.154.0/io/buffer.ts"
+
+const ndjsonLoader = async function*(path: string) {
+	for await (const l of readLines(await Deno.open(path))) {
+		yield JSON.parse (l)
+	}
+}
 
 const markdown = {
 	plugins: [
@@ -20,6 +27,7 @@ const markdown = {
 	keepDefaultPlugins: true,
 }
 const site = lume({src: './src', location: new URL('https://daxi.ml')}, {markdown});
+site.loadData ([".ndjson"], ndjsonLoader)
 site.copy ('public')
 site.use (jsx ({}))
 
