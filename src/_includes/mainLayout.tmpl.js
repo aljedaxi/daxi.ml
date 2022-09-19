@@ -17,16 +17,8 @@ export default props => {
 				${socials.map (href => `<link href="${href}" rel="me">`).join('')}
 				<link rel="webmention" href="https://webmention.io/daxi.ml/webmention" />
 				<link rel="pingback" href="https://webmention.io/daxi.ml/xmlrpc" />
+				<link rel="stylesheet" href="/public/daxi.css" />
 				<title>${title}</title>
-				<style>
-					body{background-image:url(/public/favicon.ico);background-size:1200px}
-					body>*{background-color:black;color:white;width:fit-content;padding: 8px;}
-					a{color:#d2738a}
-					ul.csv { display: inline; list-style: none; margin: 0; padding: 0; }
-					ul.csv li { display: inline; }
-					ul.csv li:after { content: ", "; }
-					ul.csv li:last-child:after { content: ""; }
-				</style>
 			</head>
 			<body>
 				${content}
