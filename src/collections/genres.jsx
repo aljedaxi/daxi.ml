@@ -1,6 +1,17 @@
 import {compareAsc} from 'https://deno.land/x/date_fns@v2.15.0/index.js'
 export const layout = 'mainLayout.tmpl.js'
 const latest = xs => xs.reduce (compareAsc)
+const specificTitle = {
+	post: 'all posts that are like, articles',
+	poetry: 'all poems',
+}
+const specificUhhhh = {
+	post: ['', 'posts', ' total'],
+	talk: ['', 'conference talks', ' that i\'ve created further readings for'],
+	'S tier': ['posts that are', 'S tier'],
+	prose: ['works that are written in', 'prose'],
+	poetry: ['', 'poems'],
+}
 export default function* ({search}) {
 	const allPages = search.pages ('post')
 	const pagesByTag = allPages.reduce ((map, p) => {
@@ -8,7 +19,6 @@ export default function* ({search}) {
 		return map
 	}, new Map())
 	const allTags = new Set (allPages.flatMap (p => p.data.tags))
-	allTags.delete ('post')
 	yield {
 		url: '/tag/index',
 		title: 'All Tags',
@@ -23,9 +33,14 @@ export default function* ({search}) {
 				</header>
 				<main>
 					<ul>
-						{[...allTags].map (tag => (
-							<li>{pagesByTag.get (tag).length} posts on/around <a href={`/tag/${tag}/`}>{tag}</a></li>
-						))}
+						{[...allTags].map (tag => {
+							const [firstHalf, secondHalf, thirdHalf = null] = specificUhhhh[tag] ?? [
+								`posts on/around`,
+								tag,
+								null
+							]
+							return <li>{pagesByTag.get (tag).length} {firstHalf} <a href={`/tag/${tag}/`}>{secondHalf}</a>{thirdHalf}</li>
+						})}
 					</ul>
 				</main>
 			</body>
@@ -37,6 +52,7 @@ export default function* ({search}) {
 			(acc, {data: {published, updated}}) => latest ([acc, published, updated]),
 			new Date ('2022-09-08')
 		)
+		const title = specificTitle[tag] ?? `All posts on or around ${tag}`
 		yield {
 			url: `/tag/${tag}/`,
 			title: tag,
@@ -44,7 +60,7 @@ export default function* ({search}) {
 			updated: latestPost,
 			content: (
 				<body>
-					<header>All posts on or around {tag}</header>
+					<header>{title}</header>
 					<main>
 						<ul>
 							{taggedPages.map (({src: {path}, data: {title}}) => (
