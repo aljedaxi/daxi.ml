@@ -56,7 +56,6 @@ published: 2020-02-13
 ver: 2
 title: 'bounding through time'
 tags:
-  - post
   - poetry
   - romance
 ---

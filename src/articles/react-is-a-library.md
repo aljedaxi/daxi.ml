@@ -5,7 +5,6 @@ updated: 2022-07-16
 title: react is still a library lol
 ver: 1
 tags:
-  - post
   - react
   - programming
   - S tier

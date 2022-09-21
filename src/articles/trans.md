@@ -3,7 +3,6 @@ layout: layout.tmpl.jsx
 published: 2015-12-17
 title: trans.tex
 tags:
-  - post
   - prose
 ---
 &laquo;Daxi, i'm afraid to write about trans girls. i'm afraid i can't capture what it is to be one---but not what it is to be all, yeah? i'm afraid

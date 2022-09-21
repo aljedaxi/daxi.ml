@@ -3,7 +3,6 @@ layout: layout.tmpl.jsx
 published: 2022-04-05
 title: toward Concern
 tags:
-  - post
   - programming
 ver: 1
 ---

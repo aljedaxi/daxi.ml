@@ -3,7 +3,6 @@ layout: layout.tmpl.jsx
 published: 2020-02-19
 title: pull out
 tags:
-  - post
   - poetry
   - S tier
 ver: 2

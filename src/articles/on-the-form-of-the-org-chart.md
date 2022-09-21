@@ -3,7 +3,6 @@ layout: layout.tmpl.jsx
 published: 2020-11-25
 title: 'the form of the org chart'
 tags:
-  - post
   - organizational cybernetics
   - business
 ver: 2

@@ -5,7 +5,6 @@ title: Seasoning wine
 ver: 1
 monospaced: False
 tags:
-  - post
   - wine
   - cocktails
 ---

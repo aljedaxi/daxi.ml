@@ -5,7 +5,6 @@ title: Opinionated React project structure
 ver: 1
 monospaced: False
 tags:
-  - post
   - programming
   - react
 ---

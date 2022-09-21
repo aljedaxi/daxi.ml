@@ -5,7 +5,6 @@ title: the component form
 ver: 1
 monospaced: False
 tags:
-  - post
   - programming
   - react
 ---
