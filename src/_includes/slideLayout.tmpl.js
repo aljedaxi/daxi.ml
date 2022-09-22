@@ -3,7 +3,6 @@ export default props => {
 	const backgroundImage = bg?.image ?? bg
 	const otherStyleStuff = bg?.image ? Object.entries(bg)?.map(([k,v]) => `background-${k}:${v}`).join(';') : ''
 	const style = `body{background-image:url(${backgroundImage ?? '/public/favicon.ico'});${otherStyleStuff}}`
-	console.log({style})
 	return `
 		<!doctype html>
 		<html>
@@ -12,7 +11,6 @@ export default props => {
 				<link rel='icon' href='/public/favicon.ico' sizes='any'>
 				<link rel="stylesheet" href="/public/slideBase.css" />
 				<style>${style}</style>
-				<title>${title}</title>
 			</head>
 			<body>
 				${content}

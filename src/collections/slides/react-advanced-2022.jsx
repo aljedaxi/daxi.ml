@@ -93,7 +93,7 @@ const slides = [
 		bg: 'https://64.media.tumblr.com/47f94452486ed00116a7bab91c9cbb83/tumblr_nnyi5iVFT81rhdp3zo4_1280.jpg',
 		content: (
 			<main>
-				<h1>from <em>On the role of scientific thought.</em></h1>
+				<h1>from <a href="https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html"><em>On the role of scientific thought.</em></a></h1>
 				<blockquote>
 					a program must be correct and we can study it from that viewpoint only; we also know that it should be efficient and we can study its efficiency on another day ... But nothing is gained ... by tackling these various aspects simultaneously. It is what I sometimes have called "the separation of concerns", which ... is yet the only available technique for effective ordering of one's thoughts ...
 				</blockquote>
@@ -160,22 +160,23 @@ const slides = [
 		</>
 	})
 ]
+export const type = 'slides'
+export const talk_id = 'react-advanced-2022'
+export const id = 'react-advanced-2022'
+export const layout = 'slideLayout.tmpl.js'
+const relationData = {type, talk_id, id}
 export default function* () {
 	let idx = 0
 	for (const {bg, content} of slides) {
-		console.log('bg', bg);
 		yield {
-			url: `./${idx++}`,
-			layout: 'slideLayout.tmpl.js',
+			...idx === 0 ? relationData : {},
+			url: `./${idx++}/`,
 			bg,
 			content,
 		}
 	}
 	yield {
-		url: `./${idx++}`,
-		layout: 'slideLayout.tmpl.js',
-		content: (
-			<main>presentation is super over.</main>
-		)
+		url: `./${idx++}/`,
+		content: <main>presentation is super over.</main>,
 	}
 }
