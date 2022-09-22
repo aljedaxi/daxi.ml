@@ -1,0 +1,6 @@
+html{height:100%}
+body{display:grid;place-items:center;height:100%;background-color:black;background-position:center;}
+main{display:grid;place-items:center}
+body>*{background-color:black;color:white;width:fit-content;padding: 8px;}
+a,b,em{color:#d2738a}
+.sm{font-variant:small-caps}
