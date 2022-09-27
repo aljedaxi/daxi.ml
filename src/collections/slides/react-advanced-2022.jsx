@@ -43,15 +43,10 @@ const slides = [
 	{
 		bg: fullScreen('/public/ways-of-seeing.jpeg'),
 		content: (
-			<>
-				<main>
-					<h1>separating <em>separation of concerns</em></h1>
-					<h2>jacob whitford-bender</h2>
-				</main>
-				<footer>
-					slides and further reading available <a href="/collections/talk-stuff/react-advanced-2022">here</a>
-				</footer>
-			</>
+			<main>
+				<h1>separating <em>separation of concerns</em></h1>
+				<h2>jacob whitford-bender</h2>
+			</main>
 		)
 	},
 	{
@@ -83,9 +78,8 @@ const slides = [
 		bg: 'https://64.media.tumblr.com/f836276ddd42547520fed8ea9ddd405f/tumblr_nrt9m2R0g61rhdp3zo1_1280.png',
 		content: (
 			<main>
-				<h1>"what i want here"</h1>
-				<h1>≡</h1>
-				<h1>"what the component wants"</h1>
+				<h1>different things do the same thing</h1>
+				<h1>the same thing does different things</h1>
 			</main>
 		)
 	},
@@ -94,7 +88,7 @@ const slides = [
 		content: (
 			<main>
 				<h1>from <a href="https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html"><em>On the role of scientific thought.</em></a></h1>
-				<blockquote>
+				<blockquote style={{maxWidth: '50em'}}>
 					a program must be correct and we can study it from that viewpoint only; we also know that it should be efficient and we can study its efficiency on another day ... But nothing is gained ... by tackling these various aspects simultaneously. It is what I sometimes have called "the separation of concerns", which ... is yet the only available technique for effective ordering of one's thoughts ...
 				</blockquote>
 			</main>

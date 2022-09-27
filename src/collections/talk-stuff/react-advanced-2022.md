@@ -9,6 +9,7 @@ id: react-advanced-2022
 slides_id: react-advanced-2022
 tags:
   - programming
+	- react
   - web development
 ---
 
@@ -23,10 +24,7 @@ tags:
 		<!-- * `todos.map (p => <Todo key={p.id} {...p}/>)` -->
 	* moving a step up, we can see this functionality is embedded in a page with other functionality
 		* if i understand my concern as a number of nested sub-concerns, i'll use some sort of tree structure, such as the DOM
-* because of this mirroring between the concern and the solution, we can say 
-  * "what i want here" as a concerned programmer, working in a component
-	* MEANS the same thing as
-	* "what the component wants" as a concerned program
+* nothing is ever only itself
 * but in practice, the job of the programmer isn't just programming. all kinds of other concerns are jostling for attention.
 	* how can i ensure the system retains a certain level of performance and functionality?
 	* these were the core concerns of Dijkstra when he was writing his seminal paper, *[on the role of scientific thought](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html)*
