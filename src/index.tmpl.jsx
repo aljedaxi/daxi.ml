@@ -15,6 +15,7 @@ const titles = [
 	'encoding programs into javascript, epic style',
 	'made with <a href="https://lume.land">lume</a>, for fun',
 	'view the source code <a href="https://github.com/aljedaxi/daxi.ml">here</a>',
+	'i wish i could write something that wasn\'t secretly an ad',
 ]
 export const published = new Date(2022, 3, 21)
 export const title = 'daxi.ml'
