@@ -6,11 +6,11 @@ ver: 1
 monospaced: False
 type: talk
 id: react-advanced-2022
-slides_id: react-advanced-2022
 tags:
   - programming
   - react
   - web development
+slides_id: react-advanced-2022
 ---
 
 # outline
