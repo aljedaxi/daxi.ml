@@ -23,7 +23,7 @@ all streets stretch out, stretch ever on, unto thee.
 
 &nbsp;
 
-the window wont open—not all the way, no. no way out in a fire. no escape but death.
+the window wont open—not all the way. no way out in a fire. no escape but death.
 
 sleep never comes.
 
@@ -49,6 +49,6 @@ the night drags you on. you close your eyes,
 
 but snow sneaks in.
 
-snow stings your eyes. your sheets swell up with space. stars catch your eyes. snow is shoveled in your eyes, coated in black paint. black paint chips behind your eyelids. your tear ducts well up with ink. your bed fills with ink. the stars swim away. your room fills with ink. your window goes black with ink. you drown in ink. the window chips and the snow learns to sink in ink. you drift into the arms of snow, safe,
+snow stings your eyes. the sky bleeds ink. your sheets swell up with space. stars catch your eyes. ink instantiates space. snow is shoveled in your eyes, coated in black paint. black paint chips behind your eyelids. your pupils are wells of ink. your tear ducts well up with ink. your bed fills with ink. the stars swim away. your room fills with ink. your window goes black with ink. you drown in ink. the window chips and the snow learns to sink in ink. you drift into the arms of snow, safe
 
 until the light learns to smother the night in your eyes
