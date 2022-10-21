@@ -13,11 +13,23 @@ tags:
 slides_id: react-advanced-2022
 ---
 
-# outline
+[[tableofcontents]]
+
+## introduction
+
+i understand i cover a lot of ground in this talk. i point to a lot of trails we don't go down. 
+
+firstly, i don't think that [signals](https://preactjs.com/blog/introducing-signals) or redux are bad libraries/data management methods. i had like, 7 minutes and i needed a hook. sometimes it's worth it to be funny, even if you're going a little bit further out than you'd otherwise like to. and yes, saying that "react performs better than vanilla js *in general*" by treating three.js applications as a representative sample is somewhere between damn lies and statistics. the gripping hand in the question of performance is that [Mel](https://en.wikipedia.org/wiki/The_Story_of_Mel) isn't a representative sample of programmers.
+
+secondly, <a href="/collections/slides/react-advanced-2022/0/">the slides are here</a>. the outline of the talk is reprinted below. i may or may not have changed or jammed through some parts of the talk and settled on something slightly different, but this is what i had on my screen while i spoke.
+
+lastly, i'd like to offer some further directions for the interested listener. those are below the outline. quotes are linked to their sources in the outline. things that id've liked to've expanded upon link to some expansion in the <a href="#further-readings">further readings</a> section, or some external resource.
+
+## outline
 
 * intro
 * my concern is what i'm attempting to do
-* how i accomplish that mirrors my understanding of my concern
+* how i accomplish that [mirrors](#recapitulation) my understanding of my concern
   * let's say i'm trying to make a grand TODO app.
     * i choose to understand the concern as a whole as the management of a list of non-interconnected tasks 
     * your understanding is a list so you use a list
@@ -33,19 +45,45 @@ slides_id: react-advanced-2022
   * > Is it slower than plain three.js?
     >
     > No ... It outperforms three.js at scale due to React's scheduling abilities.
-    [source](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
-  * i think the biggest problem here is we conceive of react as a framework, and the way we write code mirrors this conception. we've collectively forgotten what react is, and why we're using it.
+    <br/>[source](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
+  * i think the biggest problem here is we conceive of react as a framework, and the way we write code mirrors this conception. we've <a href="#collective-forgetting">collectively forgotten</a> what react is, and why we're using it.
   * i think the biggest question is "how can i eliminate unnecessary re-renders? wouldn't it be amazing if someone created a way that only components that depend on a piece of state re-rendered?"
     * they keep taking state further out of react to try to achieve this
-    * fortunately, the **react team** considered this and came out with this really cool state management library, called React. let's see it in action.
+    * fortunately, the React Team considered this and came out with this really cool state management library, called React. let's see it in action.
   * what we see are a couple of concerns jumbled together
     * we're concerned with tracking each letter that enters the input
     * and we have the concern of tracking the state of the TODOs
   * these have nothing to do with one another
-  * the heuristic i use is "what do i care about right now? what does the component care about?"
+  * the heuristic i use is "what do i care about^[ie, what am i concerned with?] right now? what does the component care about?"
     * if there's state in there you don't care about, take it out
   * Remember, the core conceit of react is `State -> UI`
     * the really, profoundly, gorgeous thing about react is that 
     * when we speak components, we're speaking state ui. the component form implicitly binds that together.
     * because react can rely on that, we don't have to communicate these things explicitly. by seprarating our concerns—by separating our state—by relying on the ways in which these things necessarily mirror one another, we're necessarily making our app faster.
     * and there's a profound beauty in that connection.
+
+## a note on the atmosphere
+
+i don't spend a lot of time on twitter. i do spend a lot of time reading blog posts from newsletters[^shift], and i'm getting a feeling. the [ideology](https://www.youtube.com/watch?v=uuTkuy9D5lY) is shifting. react was getting a lot of hate when i first started drafting my outline. i've experienced a bit less hate recently, just a muted resentment. "was i one of the hosts that helped [presence](https://www.orphandriftarchive.com/articles/hyperstition/) this egregore?" almost definitely.
+
+does that have anything to do with what industry is doing? the life and death of San Francisco; the retreat of venture capital, the death of crypto, and the slowing of the start-up sphere; the hiring freeze, the apophantical rumblings about soft quitting and soft firing? perhaps. i'm no sociologist.
+
+[fresh](https://fresh.deno.dev/docs/getting-started/form-submissions), [remix](https://remix.run/blog/not-another-framework), perhaps even [ultra](https://ultrajs.dev/), all feel to me like a new world struggling to be born. all of them use react. maybe this is a sort of cynicism, a feeling that react will always rule the frontend space. [all the big guys](https://microsoft.github.io/react-native-windows/blog/2022/02/11/settings?ck_subscriber_id=1450305946) are using it, and there are going to be fewer, smaller small guys. or maybe react is just awesome. who knows.
+
+[^shift]: mostly [this one](https://toot.cafe/@baldur), [es next](http://esnextnews.com/), and [the ui.dev](https://bytes.dev) ones
+
+## further readings
+
+### collective forgetting
+
+### nothing is ever only itself
+
+### recapitulation
+
+eagle eared listeners may recognize something like [Conway's Law](https://martinfowler.com/bliki/ConwaysLaw.html) in this statement. that's because i'm referring to the [good regulator theorem](https://en.wikipedia.org/wiki/Good_regulator), of which Conway's Law is a corollary.
+
+to get the good regulator theorem, i'd do a bit of mental refactoring. once you understand variety and interface, the good regulator theorem is trivial.
+
+for variety, i cannot undersell the work of [Stafford Beer](https://metaphorum.org/art). his *[Designing Freedom](https://archive.org/details/DesigningFreedom_CBC_Lectures)* and *[Falcondale Collection](https://opendata.ljmu.ac.uk/id/eprint/6/)* are light and cheery, easy to understand, and deeply, subtly profound. [this webinar](https://www.youtube.com/watch?v=q5GqCNavnQw) by Pam Sydelko is one of the most clear and productive applications of the methods.
+
+on the question of interface, i enjoyed [Heidegger](https://publishing.cdlib.org/ucpressebooks/view?docId=ft6q2nb3wh&chunk.id=d0e6507&toc.depth=1&toc.id=d0e6502&brand=eschol)'s *The Question Concerning Technology*, though i'm sure there are programming books that cover the subject better.

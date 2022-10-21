@@ -31,7 +31,7 @@ export default props => {
 				spinner
 			</header>
 			<main>
-				<h2>These are articles that are good:</h2>
+				<h2>good articles:</h2>
 				<ul>
 					{map (({src: {path}, data: {title, tags}}) => (
 						<li>
@@ -45,8 +45,10 @@ export default props => {
 				</ul>
 				<h2>other things:</h2>
 				<ul>
-					<li><a href="/collections/books">i digitized my books</a></li>
-					<li><a href="/collections/my-works">i have put other stuff together that you can c here</a></li>
+					<li>this is my personal website.</li>
+					<li><a href="/collections/books">i've put up a list of most of the books i own</a></li>
+					<li><a href="/collections/my-works">stuff scattered about the web are collected here.</a></li>
+					<li>of yet, i've given <a href="/collections/talk-stuff/react-advanced-2022/">one big conference talk</a>.</li>
 				</ul>
 			</main>
 			<script dangerouslySetInnerHTML={{__html: `document.querySelector('#title').innerHTML = ${JSON.stringify(titles)}[Math.floor(Math.random() * ${titles.length})]`}}></script>

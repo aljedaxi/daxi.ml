@@ -2,9 +2,6 @@
 layout: layout.tmpl.jsx
 published: 2022-06-21
 title: as the tap dancer has their feet, so has the vi expert their fingers
-tags:
-  - post
-  - poetry
 ver: 1
 ---
 

@@ -19,10 +19,10 @@ const markdown = {
 			listType: 'ol',
 			containerHeaderHtml: '<h2>table of contents</h2>',
 			markerPattern: /^\[\[tableofcontents\]\]/im,
-			includeLevel: [1,2],
+			includeLevel: [1,2,3],
 		}],
 		[anchor, {
-			level: [1,2],
+			level: [1,2,3],
 		}],
 	],
 	keepDefaultPlugins: true,
