@@ -19,9 +19,12 @@ slides_id: react-advanced-2022
 
 i understand i cover a lot of ground in this talk. i point to a lot of trails we don't go down. 
 
-firstly, i don't think that [signals](https://preactjs.com/blog/introducing-signals) or redux are bad libraries/data management methods. i had 7 minutes and i needed a hook. sometimes it's worth it to be funny, even if you're going a little bit further out than you'd otherwise like to. and yes, saying that "react performs better than vanilla js *in general*" by treating three.js applications as a representative sample is somewhere between damn lies and statistics. the gripping hand in the question of performance is that [Mel](https://en.wikipedia.org/wiki/The_Story_of_Mel) isn't a representative sample of programmers, nor a representative sample of the task/concerns of programming.
+firstly, i don't think that [signals](https://preactjs.com/blog/introducing-signals) or redux are bad libraries/data management methods. i had 7 minutes and i needed a hook. sometimes it's worth it to be funny, even if you're going a little bit further out than you'd otherwise like to. a corollary of my emphasis on the implicit at the end there is that a big part of react is that *you don't need to "get it"*. react works well because of the nature of the tree structure. i profer to get it, but i'm certainly not the best programmer on my dev team.
+i will say that signals is a firm movement away from what react *[is](#the-question-of-being)*. but signals isn't in react! it's in preact! i'm barking up [the wrong tree](#a-note-on-the-atmosphere) lol!
 
-yes, this talk was not about philosophy of technology, more like, philosophy and technology. probably not even that. i put the topic in as "philosophy of technology?" thinking they'd put it in a different category lol. that being said, i hear you can pass this off as philosophy of technology in a number of American philosophy departments, so, what do i know.
+and yes, saying that "react performs better than vanilla js *in general*" by treating three.js applications as a representative sample is somewhere between damn lies and statistics. the gripping hand in the question of performance is that [Mel](https://en.wikipedia.org/wiki/The_Story_of_Mel) isn't a representative sample of programmers, nor a representative sample of the task/concerns of programming.
+
+and yes, this talk was not about philosophy of technology, more like, philosophy and technology. probably not even that. i put the topic in as "philosophy of technology?" thinking they'd put it in a different category lol. that being said, i hear you can pass this off as philosophy of technology in a number of American philosophy departments, so, what do i know.
 
 secondly, <a href="/collections/slides/react-advanced-2022/0/">the slides are here</a>. the outline of the talk is reprinted below. i may or may not have changed or jammed through some parts of the talk and settled on something slightly different, but this is what i had on my screen while i spoke.
 
@@ -38,7 +41,7 @@ lastly, i'd like to offer some further directions for the interested listener. t
     <!-- * `todos.map (p => <Todo key={p.id} {...p}/>)` -->
   * moving a step up, we can see this functionality is embedded in a page with other functionality
     * if i understand my concern as a number of nested sub-concerns, i'll use some sort of tree structure, such as the DOM
-* nothing is ever only itself
+* [#the-question-of-being](nothing is ever only itself)
 * but in practice, the job of the programmer isn't just programming. all kinds of other concerns are jostling for attention.
   * how can i ensure the system retains a certain level of performance and functionality?
   * these were the core concerns of Dijkstra when he was writing his seminal paper, *[on the role of scientific thought](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html)*
@@ -78,7 +81,7 @@ does that have anything to do with what industry is doing? the life and death of
 
 ### collective forgetting
 
-### nothing is ever only itself
+### the question of being
 
 ### recapitulation
 
