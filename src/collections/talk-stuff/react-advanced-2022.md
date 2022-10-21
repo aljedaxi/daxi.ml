@@ -21,6 +21,8 @@ i understand i cover a lot of ground in this talk. i point to a lot of trails we
 
 firstly, i don't think that [signals](https://preactjs.com/blog/introducing-signals) or redux are bad libraries/data management methods. i had 7 minutes and i needed a hook. sometimes it's worth it to be funny, even if you're going a little bit further out than you'd otherwise like to. and yes, saying that "react performs better than vanilla js *in general*" by treating three.js applications as a representative sample is somewhere between damn lies and statistics. the gripping hand in the question of performance is that [Mel](https://en.wikipedia.org/wiki/The_Story_of_Mel) isn't a representative sample of programmers, nor a representative sample of the task/concerns of programming.
 
+yes, this talk was not about philosophy of technology, more like, philosophy and technology. probably not even that. i put the topic in as "philosophy of technology?" thinking they'd put it in a different category lol.
+
 secondly, <a href="/collections/slides/react-advanced-2022/0/">the slides are here</a>. the outline of the talk is reprinted below. i may or may not have changed or jammed through some parts of the talk and settled on something slightly different, but this is what i had on my screen while i spoke.
 
 lastly, i'd like to offer some further directions for the interested listener. those are below the outline. quotes are linked to their sources in the outline. i hope to fully expand upon everything i've touched upon here. until then, follow the links below.
