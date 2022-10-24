@@ -100,12 +100,15 @@ const Parent = ({children}) => <Caller><MyEpicChild/></Caller>
 the relationship between `Caller` and `Called` is very different from the relationship between `Caller` and `MyEpicChild`, yet we call both of them a parent-child relationship. the following is left as an excersize to the reader:
 
 ```sh
-extract.py -d '/Users/daxi/Library/Application Support/Firefox/Profiles/jok30xud.dev-edition-default/sessionstore-backups/recovery.jsonlz4' | jq '.windows[0].tabs | .[] | .entries | .[] | .url' | sort | uniq
+extract.py -d '~/Library/Application Support/Firefox/Profiles/jok30xud.dev-edition-default/sessionstore-backups/recovery.jsonlz4' \
+  | jq '.windows[0].tabs | .[] | .entries | .[] | .url' \
+  | sort \
+  | uniq
 ```
 
 ```jsx
 const Pipeline = _ => (
-  <Extract d path='/Users/daxi/Library/Application Support/Firefox/Profiles/jok30xud.dev-edition-default/sessionstore-backups/recovery.jsonlz4'>
+  <Extract d path='~/Library/Application Support/Firefox/Profiles/jok30xud.dev-edition-default/sessionstore-backups/recovery.jsonlz4'>
     <Jq q='.windows[0].tabs | .[] | .entries | .[] | .url'>
       <Sort>
         <Uniq>
