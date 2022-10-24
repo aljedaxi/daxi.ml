@@ -129,8 +129,6 @@ on the other hand, why would you want to? the decision was made by somebody the 
 
 ### the question of being
 
-the question of being is the question of what it is to be something. check back to this page in, uh, 5m.
-
 ### recapitulation
 
 eagle eared listeners may recognize something like [Conway's Law](https://martinfowler.com/bliki/ConwaysLaw.html) in this statement. that's because i'm referring to the [good regulator theorem](https://en.wikipedia.org/wiki/Good_regulator), of which Conway's Law is a corollary.
