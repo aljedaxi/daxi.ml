@@ -41,7 +41,7 @@ lastly, i'd like to offer some further directions for the interested listener. t
     <!-- * `todos.map (p => <Todo key={p.id} {...p}/>)` -->
   * moving a step up, we can see this functionality is embedded in a page with other functionality
     * if i understand my concern as a number of nested sub-concerns, i'll use some sort of tree structure, such as the DOM
-* [#the-question-of-being](nothing is ever only itself)
+* [nothing is ever only itself](#the-question-of-being)
 * but in practice, the job of the programmer isn't just programming. all kinds of other concerns are jostling for attention.
   * how can i ensure the system retains a certain level of performance and functionality?
   * these were the core concerns of Dijkstra when he was writing his seminal paper, *[on the role of scientific thought](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html)*
@@ -121,9 +121,15 @@ const Pipeline = _ => (
 
 ### collective forgetting
 
-#### hauntologie, ideology, implicitcies
+there's a tendency in politics^[within the opining of anti- and post-political commentators with apophantical politicalities] to assume that everyone older than boomers had a boomer's politics/politicality. this is understanding is [extremely false](https://aeon.co/essays/a-dissenting-view-on-the-origins-of-the-uss-right-wing); nonetheless, the assumption frames all political discourse.
+
+a decision is made and the reasoning behind it is lost to time. eventually, the decision itself is lost. perhaps the team member that made that decision left the team. new team members that never met the decision maker can ask around to try to understand who they were, what they were dealing with, but no amount of asking around will recreate that moment.
+
+on the other hand, why would you want to? the decision was made by somebody the organization trusted, they have more information than you, and they were able to resolve the problem. we collectively forget the question and the problem because we don't really have to think about it.
 
 ### the question of being
+
+the question of being is the question of what it is to be something. check back to this page in, uh, 5m.
 
 ### recapitulation
 
