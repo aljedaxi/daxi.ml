@@ -79,7 +79,46 @@ does that have anything to do with what industry is doing? the life and death of
 
 ## further readings
 
+### a note on the implicit
+
+react components don't re-render when their props change.
+
+let's consider what would cause a prop to change. props are necessarily passed in from some parent. there are two cases in which that datum would change:
+
+- if that datum is calculated during the caller's render phase—ie, in the function that is that component—then that means the parent re-rendered, and the called function will already be queued for re-render.
+- if that datum isn't coming from the function that is the calling component, you're going to need some way to sync up react with that external whatever.
+  - in the case of something truly external, that's what useEffect is for
+  - on the other hand, we have the question of `useRef`. if you're `useRef`fing a DOM node and you're trying to sync up with that, [odds are there's some sort of event you can listen to directly](https://beta.reactjs.org/learn/you-might-not-need-an-effect).
+
+i'd like to draw attention to the words `caller` and `called`. i'd like to harken back to programming more generally. consider:
+
+```jsx
+const Caller = ({children}) => <Called>{children}</Called>
+const Parent = ({children}) => <Caller><MyEpicChild/></Caller>
+```
+
+the relationship between `Caller` and `Called` is very different from the relationship between `Caller` and `MyEpicChild`, yet we call both of them a parent-child relationship. the following is left as an excersize to the reader:
+
+```sh
+extract.py -d '/Users/daxi/Library/Application Support/Firefox/Profiles/jok30xud.dev-edition-default/sessionstore-backups/recovery.jsonlz4' | jq '.windows[0].tabs | .[] | .entries | .[] | .url' | sort | uniq
+```
+
+```jsx
+const Pipeline = _ => (
+  <Extract d path='/Users/daxi/Library/Application Support/Firefox/Profiles/jok30xud.dev-edition-default/sessionstore-backups/recovery.jsonlz4'>
+    <Jq q='.windows[0].tabs | .[] | .entries | .[] | .url'>
+      <Sort>
+        <Uniq>
+        </Uniq>
+      </Sort>
+    </Jq>
+  </Extract>
+)
+```
+
 ### collective forgetting
+
+#### hauntologie, ideology, implicitcies
 
 ### the question of being
 
