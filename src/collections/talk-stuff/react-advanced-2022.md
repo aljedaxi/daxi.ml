@@ -131,7 +131,7 @@ the culture, [so to speak](https://culture.ghost.io/what-do-we-even-mean-by-cult
 
 i would like to note here the failure of the Nietzschean project—ie, a revolutionary upheaval of modernity's ghosts at a ontogenic level—and most [further, uncritical developments](https://glass--beach.tumblr.com/post/698852034414346240), of which the worst offender was[^acc] [accelerationism](https://scottlocklin.wordpress.com/the-futurist-manifesto/). [there is no private language](https://en.wikipedia.org/wiki/Private_language_argument#The_beetle-in-a-box), and understanding progresses [Hermeneutically](https://en.wikipedia.org/wiki/Hermeneutics#Heidegger_(1889%E2%80%931976)).
 
-[^acc]: accelerationism isn't relevant anymore. it has completed its metamorphosis into [unabashed fascism](https://12ft.io/proxy?q=https%3A%2F%2Ftruesanskrit.substack.com%2Fp%2Fforget-theory).
+[^acc]: accelerationism isn't relevant anymore. it has completed its metamorphosis into [unabashed fascism](https://truesanskrit.substack.com/p/the-euthanasia-of-pure-reason).
 
 ### the question of being
 
