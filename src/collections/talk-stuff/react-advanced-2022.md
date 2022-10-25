@@ -127,6 +127,12 @@ a decision is made and the reasoning behind it is lost to time. eventually, the 
 
 on the other hand, why would you want to? the decision was made by somebody the organization trusted, they have more information than you, and they were able to resolve the problem. we collectively forget the question and the problem because we don't really have to think about it.
 
+the culture, [so to speak](https://culture.ghost.io/what-do-we-even-mean-by-culture/), is said to the haunted by the decision. the closest thing to a formal study of these things is called [Hauntology](https://en.wikipedia.org/wiki/Hauntology), a term coined by Derrida, highly influenced by [Heidegger](https://en.wikipedia.org/wiki/Martin_Heidegger#Influences), [Foucault, Nietzsche](https://www.sciencedirect.com/science/article/abs/pii/0191659989902659), &c., and the ship is perhaps most famously commandeered now by [Žižek](https://www.youtube.com/watch?v=uuTkuy9D5lY).
+
+i would like to note here the failure of the Nietzschean project—ie, a revolutionary upheaval of modernity's ghosts at a ontogenic level—and most [further, uncritical developments](https://glass--beach.tumblr.com/post/698852034414346240), of which the worst offender was[^acc] [accelerationism](https://scottlocklin.wordpress.com/the-futurist-manifesto/). [there is no private language](https://en.wikipedia.org/wiki/Private_language_argument#The_beetle-in-a-box), and understanding progresses [Hermeneutically](https://en.wikipedia.org/wiki/Hermeneutics#Heidegger_(1889%E2%80%931976)).
+
+[^acc]: accelerationism isn't relevant anymore. it has completed its metamorphosis into [unabashed fascism](https://12ft.io/proxy?q=https%3A%2F%2Ftruesanskrit.substack.com%2Fp%2Fforget-theory).
+
 ### the question of being
 
 ### recapitulation
