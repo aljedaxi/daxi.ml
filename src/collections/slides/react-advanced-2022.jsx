@@ -135,7 +135,7 @@ const slides = [
 		content: <main><h1>state ↦ <span className="sm">ui</span></h1></main>,
 	},
 	slide ({
-		heading: <h1><a href="http://localhost:8011/collections/talk-stuff/react-advanced-2022/">further reading </a> and image sources:</h1>,
+		heading: <h1><a href="/collections/talk-stuff/react-advanced-2022/">further reading </a> and image sources:</h1>,
 		children: <>
 			<h2>Further reading:</h2>
 			<a href="/collections/talk-stuff/react-advanced-2022/">
