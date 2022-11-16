@@ -9,7 +9,7 @@ tags: []
 
 ## me
 
-i am a <a href="https://laboriacuboniks.net/manifesto/xenofeminism-a-politics-for-alienation/">xenofeminist</a>; i use <a href="https://colemak.com/Unix">colemak</a> (&amp; you should too); 
+i am a deeply uninteresting person.
 
 ## published poetry
   - [god's in barcelona](https://www.adbusters.org/article/abandonment). the image at the top (which wasn't chosen by me) is of a room in the Fundació Joan Miró in Barcelona.
