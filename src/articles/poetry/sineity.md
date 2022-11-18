@@ -22,10 +22,10 @@ now black,
 
 now sight savours shape; orange opens edges of ink washed white, ragged before the majesty of
 
-spotty sights sinew;
+soldered with sight and sewn with sinew;
 
-gilding, glamorous lightning lays low little night
+gilding, glamorous lightning lays low that little night, leaving:
 
-the darkness roils on around the
+&nbsp;
 
-sinuous
+the darkness roils on around
