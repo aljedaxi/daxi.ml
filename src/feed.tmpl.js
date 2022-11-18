@@ -43,8 +43,9 @@ export default props => {
   const {title, subtitle, feedUrl, url, author} = metadata
   const realRss = trace (
     joinMap (formatItem) (
-      search.pages ('post', 'date=desc')
+      search.pages ('post', 'published=desc')
         .filter(x => x.data.published)
+        .sort((x, y) => new Date(y.data.published) - new Date(x.data.published))
     )
   )
   const rss = c ('rss') ({version: '2.0'}) ([
