@@ -1,3 +1,9 @@
+---
+title: sineity
+published: 2021-07-13
+layout: layout.tmpl.jsx
+ver: 0
+---
 sinuous
 sight springs; light lilts;
 matte clouds encoil the cyan left limping; washed, white, away

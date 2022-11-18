@@ -1,5 +1,7 @@
 export const url = '/feed.xml'
 
+const trace = s => (console.log(s), s)
+
 const joinMap = f => xs => xs.map (f).join ('')
 
 const formatProps = o => {
@@ -20,11 +22,12 @@ const c = createElement
 const getDate = ({data: {title, updated, published, date}}) => 
   updated || published || date ? (updated ?? published ?? date).toISOString () : ''
 
-const formatItem = ({data, url}) => c ('item') () ([
+const formatItem = ({data}) => c ('item') () ([
   `<title>${data.title}</title>`,
-  `<link>daxi.ml${url}</link>`,
+  `<link>https://daxi.ml${data.url}</link>`,
   getDate ({data}) ? c ('updated') () (getDate ({data})) : ''
 ])
+
 const metadata = {
   "title": "daxi.ml",
   "subtitle": "philosophy and high speed computing machines and  and shit lol",
@@ -38,6 +41,12 @@ const metadata = {
 export default props => {
   const {search} = props
   const {title, subtitle, feedUrl, url, author} = metadata
+  const realRss = trace (
+    joinMap (formatItem) (
+      search.pages ('post', 'date=desc')
+        .filter(x => x.data.published)
+    )
+  )
   const rss = c ('rss') ({version: '2.0'}) ([
     c ('channel') () (`
 <title>${title}</title>
@@ -48,7 +57,7 @@ export default props => {
 <copyright>peer production license</copyright>
 <generator>ViperMADEthisBEAt</generator>
 <docs>https://www.rssboard.org/rss-specification</docs>
-${joinMap (formatItem) (search.pages ('type=posts', 'date=desc', 10))}
+${realRss}
     `)
   ])
   return `<?xml version="1.0" encoding="utf-8"?>${rss}`.trim ()

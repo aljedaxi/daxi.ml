@@ -2,6 +2,8 @@
 layout: layout.tmpl.jsx
 published: 2022-10-19
 title: insomnia in the cosmos' orphanage
+misc links:
+  - https://www.youtube.com/watch?v=xVWmhbEPpT8&list=OLAK5uy_lPgLeaJZKZGKri_ZhdVHwKvEQXdhHSBAw
 ver: 1
 ---
 
@@ -37,10 +39,6 @@ cutting off a black canvas.
 
 &nbsp;
 
-then the snow lights the street light.
-
-&nbsp;
-
 you are free to watch.
 
 &nbsp;
@@ -49,6 +47,6 @@ the night drags you on. you close your eyes,
 
 but snow sneaks in.
 
-snow stings your eyes. the sky bleeds ink. your sheets swell up with space. stars catch your eyes. ink instantiates space. snow is shoveled in your eyes, coated in black paint. black paint chips behind your eyelids. your pupils are wells of ink. your tear ducts well up with ink. your bed fills with ink. the stars swim away. your room fills with ink. your window goes black with ink. you drown in ink. the window chips and the snow learns to sink in ink. you drift into the arms of snow, safe
+snow stings your eyes. the sky bleeds ink. sheets swell up with space. stars catch your eyes. ink instantiates space. snow is shovelled in your eyes, coated in black paint. black paint chips behind your eyelids. your pupils are wells of ink. your tear ducts well up with ink. your bed wells with ink. the stars swim away. your room fills with ink. your window goes black with ink. you drown in ink. the window chips and the snow learns to sink in ink. you drift into the arms of snow, safe
 
 until the light learns to smother the night in your eyes

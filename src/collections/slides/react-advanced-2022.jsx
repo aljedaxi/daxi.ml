@@ -37,7 +37,7 @@ const tree = ({children, heading}) => slide ({
 		</pre>
 	)
 })
-const SC = ({children}) => <span class="sm">{children}</span>
+const SC = ({children}) => <span className="sm">{children}</span>
 
 const slides = [
 	{
