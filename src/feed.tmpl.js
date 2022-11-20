@@ -22,10 +22,15 @@ const c = createElement
 const getDate = ({data: {title, updated, published, date}}) => 
   updated || published || date ? (updated ?? published ?? date).toISOString () : ''
 
+const obvious = new Set(['post'])
 const formatItem = ({data}) => c ('item') () ([
   `<title>${data.title}</title>`,
   `<link>https://daxi.ml${data.url}</link>`,
-  getDate ({data}) ? c ('updated') () (getDate ({data})) : ''
+  `<guid>https://daxi.ml${data.url}</guid>`,
+  `<pubDate>${data.published.toUTCString()}</pubDate>`,
+  ...data.tags
+    .filter(t => !obvious.has(t))
+    .map(category => `<category>${category}</category>`),
 ])
 
 const metadata = {
