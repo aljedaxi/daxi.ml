@@ -1,4 +1,4 @@
-body{background-image:url(/public/favicon.avif);background-size:1200px}
+body{background-image:url(/public/favicon.webp);background-size:1200px}
 body>*{background-color:black;color:white;width:fit-content;padding: 8px;}
 a{color:#d2738a}
 ul.csv { display: inline; list-style: none; margin: 0; padding: 0; }
