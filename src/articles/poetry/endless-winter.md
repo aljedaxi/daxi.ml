@@ -4,7 +4,7 @@ published: 2022-10-19
 title: insomnia in the cosmos' orphanage
 misc links:
   - https://www.youtube.com/watch?v=xVWmhbEPpT8&list=OLAK5uy_lPgLeaJZKZGKri_ZhdVHwKvEQXdhHSBAw
-ver: 1
+ver: 2
 ---
 
 night blankets
@@ -13,7 +13,7 @@ so the snow shelters the grass
 
 so the street lights shimmer the snow
 
-until the night smothers the light in your eyes
+until night learns to smother the light in your eyes
 
 &nbsp;
 
@@ -25,7 +25,7 @@ all streets stretch out, stretch ever on, unto thee.
 
 &nbsp;
 
-the window wont open—not all the way. no way out in a fire. no escape but death.
+the window won't open—not all the way. no way out in a fire. no escape but death.
 
 sleep never comes.
 
@@ -49,4 +49,4 @@ but snow sneaks in.
 
 snow stings your eyes. the sky bleeds ink. sheets swell up with space. stars catch your eyes. ink instantiates space. snow is shovelled in your eyes, coated in black paint. black paint chips behind your eyelids. your pupils are wells of ink. your tear ducts well up with ink. your bed wells with ink. the stars swim away. your room fills with ink. your window goes black with ink. you drown in ink. the window chips and the snow learns to sink in ink. you drift into the arms of snow, safe
 
-until the light learns to smother the night in your eyes
+until light learns to smother the night in your eyes
