@@ -4,12 +4,14 @@ const rssFeedLink = `<link rel='alternate' type='application/rss+xml' href='/fee
 const socials = ['https://twitter.com/aljedaxi/', 'https://github.com/aljedaxi/', 'mailto:alje@daxi.ml']
 
 export default props => {
-	const {content, title} = props
+	const {content, title, sheets = [], scripts = []} = props
 	return `
 		<!doctype html>
 		<html>
 			<head>
 				<meta charset='utf-8'/>
+				${sheets.map(filename => `<link rel="stylesheet" href="/public/${filename}" />`)}
+				${scripts.map(filename => `<script type='module' src="/public/${filename}" ></script>`)}
 				<title>${title}</title>
 				<link rel='icon' href='/public/favicon.ico' sizes='any'>
 				${rssFeedLink}

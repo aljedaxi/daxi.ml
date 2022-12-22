@@ -1,0 +1,8 @@
+#wheel ul {
+	list-style: none;
+	padding-left: 18px;
+}
+
+#wheel > ul ul {
+	display: none;
+}
