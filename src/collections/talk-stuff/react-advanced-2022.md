@@ -106,6 +106,17 @@ extract.py -d '~/Library/Application Support/Firefox/Profiles/jok30xud.dev-editi
   | uniq
 ```
 
+```js
+const pipe = fs => x => fs.reduce((f, x) => f(x), x)
+const c = component => props => children => react.createElement(component, props, ...children)
+const Pipeline = _ => (
+	c (Uniq) ({}),
+	c (Sort) ({}),
+	c (Jq) ({q: '.windows[0].tabs | .[] | .entries | .[] | .url'}),
+	c (Extract) ({d: true, path: '~/Library/Application Support/Firefox/Profiles/jok30xud.dev-edition-default/sessionstore-backups/recovery.jsonlz4'}),
+)
+```
+
 ```jsx
 const Pipeline = _ => (
   <Extract d path='~/Library/Application Support/Firefox/Profiles/jok30xud.dev-edition-default/sessionstore-backups/recovery.jsonlz4'>
@@ -123,7 +134,7 @@ const Pipeline = _ => (
 
 there's a tendency in politics^[within the opining of anti- and post-political commentators with apophantical politicalities] to assume that everyone older than boomers had a boomer's politics/politicality. this is understanding is [extremely false](https://aeon.co/essays/a-dissenting-view-on-the-origins-of-the-uss-right-wing); nonetheless, the assumption frames all political discourse.
 
-a decision is made and the reasoning behind it is lost to time. eventually, the decision itself is lost. perhaps the team member that made that decision left the team. new team members that never met the decision maker can ask around to try to understand who they were, what they were dealing with, but no amount of asking around will recreate that moment.
+a decision is made and [the reasoning behind it](https://fs.blog/chestertons-fence/) is lost to time. eventually, the decision itself is lost. perhaps the team member that made that decision left the team. new team members that never met the decision maker can ask around to try to understand who they were and [what they were dealing with](https://www.youtube.com/watch?v=TfIZY0s1JG0&list=PLb6beINBc3reNTndv-NYS4mUhlS7j32nY&index=3), but no amount of asking around will recreate that moment.
 
 on the other hand, why would you want to? the decision was made by somebody the organization trusted, they have more information than you, and they were able to resolve the problem. we collectively forget the question and the problem because we don't really have to think about it.
 
@@ -134,11 +145,9 @@ i would like to note here the failure of the Nietzschean project, ie, a revoluti
 [^acc]: This includes [further uncritical developments](https://glass--beach.tumblr.com/post/698852034414346240), of which the worst offender was[^acc] [accelerationism](https://scottlocklin.wordpress.com/the-futurist-manifesto/). accelerationism isn't relevant anymore. it has completed its metamorphosis into [unabashed fascism](https://truesanskrit.substack.com/p/the-euthanasia-of-pure-reason).
 
 on the other side of collective forgetting, we have collective coming into being. [react is still a library](/articles/react-is-a-library), but i don't think that's what the debate over whether or not react is a library is actually about. react isn't just react.
-react—what we're talking about when we talk about react—isn't just code, nor is it just the instructions encoded into that prose poetry, nor is it the code uses that library, nor is it the state of mind that react engenders, nor is it the understanding of react necessary to use it.
+react—what we're talking about when we talk about react—isn't just code, nor is it just the instructions encoded into that prose poetry, nor is it the code that uses that library, nor is it the state of mind that react engenders, nor is it the understanding of react necessary to use it. it is neither the wearer nor the worn, but the wearing.
 in the [language game](https://en.wikipedia.org/wiki/Language_game_(philosophy)) of "[the discourse](https://www.opendemocracy.net/en/opendemocracyuk/exiting-vampire-castle/)", react is the whole lifecycle of using react from the eye of the "business" ([from the eye of the programmer](https://myimmortal.fandom.com/wiki/Preps)) rather than the eye of the act of programming or engineering or architecture.
 this is why, despite react a library on a *technical level*, it's nonetheless a framework on a linguistic level. when we say react—most especially because of the tooling needed to make jsx work—we say "a """""""full""""""" react ""app""", the whole react experience.
-
-### the question of being
 
 ### recapitulation
 
