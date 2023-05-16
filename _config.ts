@@ -30,6 +30,7 @@ const markdown = {
 const site = lume({src: './src', location: new URL('https://daxi.ml')}, {markdown});
 site.loadData (['.ndjson'], ndjsonLoader)
 site.copy ('public')
+site.copy ('vocab')
 site.use (jsx ({}))
 site.use (relations ({
 	foreignKeys: {
