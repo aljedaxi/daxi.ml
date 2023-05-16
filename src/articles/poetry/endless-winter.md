@@ -4,14 +4,16 @@ published: 2022-10-19
 title: insomnia in the cosmos' orphanage
 misc links:
   - https://www.youtube.com/watch?v=xVWmhbEPpT8&list=OLAK5uy_lPgLeaJZKZGKri_ZhdVHwKvEQXdhHSBAw
-ver: 2
+ver: 3
 ---
 
 night blankets
 
 so the snow shelters the grass
 
-so the street lights shimmer the snow
+so the street lights shimmer the snow; soundless
+
+, and stare,
 
 until night learns to smother the light in your eyes
 
