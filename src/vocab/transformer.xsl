@@ -6,6 +6,7 @@
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
 	xmlns:vann="http://purl.org/vocab/vann/"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:ibis="https://vocab.methodandstructure.com/ibis#"
 >
 	<xsl:template match="/owl:Ontology">
 		<html>
@@ -51,7 +52,7 @@
 					<section>
 						<h2>Classes</h2>
 						<xsl:for-each select="class">
-							<section id="{id}" about="[{/owl:Ontology/vann:preferredNamespacePrefix}:{rdfs:label}]" typeof="owl:Class">
+							<section id="{@id}" about="[{/owl:Ontology/vann:preferredNamespacePrefix}:{rdfs:label}]" typeof="owl:Class">
 								<h3 property="rdfs:label">
 									<xsl:value-of select="rdfs:label"/>
 								</h3>
@@ -68,8 +69,8 @@
 								<dl>
 									<dt>Subclass of:</dt>
 									<dd>
-										<a rel="rdfs:subClassOf" href="{rdfs:subClassOf/url}"> <!-- TODO href -->
-											<xsl:value-of select="rdfs:subClassOf/label"/>
+										<a rel="rdfs:subClassOf" href="{@class}"> <!-- TODO expand shortname -->
+											<xsl:value-of select="@class"/>
 										</a>
 									</dd>
 								</dl>
