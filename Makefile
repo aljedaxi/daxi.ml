@@ -20,7 +20,7 @@ grab-pages:
 	@jq '.name' < ${PAGE_FILE}.ndjson \
 		| xargs -n 1 -I '{}' sh -c "PAGE_NAME='{}' make grab-page"
 
-build:
-	@xsltproc src/vocab/jera/jera.xml > src/vocab/jera/index.html
+run:
+	@deno task serve -p 8011
 
 .PHONY: grab-pages grab-page

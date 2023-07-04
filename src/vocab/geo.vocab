@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<owl:Ontology
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+	<name>a vocabulary of the geometric method</name>
+	<author>daxi</author>
+	<vann:preferredNamespacePrefix>geo</vann:preferredNamespacePrefix>
+	<version>0.1</version>
+	<created>2023-07-03</created>
+	<updated>2023-07-03</updated>
+	<comment>This is a rdfsification of the system used by Spinoza in his Ethica.</comment>
+	<class class="skos:Concept" id="Definition">
+		<skos:definition>
+				Basically a skos:definition.
+		</skos:definition>
+	</class>
+	<class class="geo:Proposition" id="Axiom">
+		<skos:definition>
+				A self-evident proposition.
+		</skos:definition>
+	</class>
+	<class class="skos:Concept" id="Proposition">
+		<skos:definition>
+				A statement about the world, understood herein to the be true, on the basis of its logical relationship to axioms through other propositions.
+		</skos:definition>
+	</class>
+	<class class="geo:Proposition" id="Corollary">
+		<skos:altLabel>Corollarium</skos:altLabel>
+		<skos:definition>
+				A proposition of interest, readily deducible from a meatier proposition.
+		</skos:definition>
+	</class>
+	<class id="Proof" class="skos:Concept">
+		<skos:definition>
+			Shows the way in which a given proposition relates to one or more other propositions, and thereby the axioms that ground it.
+		</skos:definition>
+		<skos:altLabel>Demonstration</skos:altLabel>
+		<skos:altLabel>Demonstratio</skos:altLabel>
+		<skos:altLabel>Aliter</skos:altLabel>
+		<skos:editorialNote>
+			A proposition may have more than one proof. In the Latin of the ethics, these are written as ALITER, eg Part one, proposition XI.
+		</skos:editorialNote>
+	</class>
+	<class class="skos:Concept" id="Scholium">
+		<skos:definition>
+			Grammatical, critical, or explanatory comments.
+		</skos:definition>
+		<skos:editorialNote>Similar to but much broader than <a href="skos:editorialNote">skos:editorialNote</a>. Think of it in the context of medieval marginalia.</skos:editorialNote>
+	</class>
+</owl:Ontology>
+

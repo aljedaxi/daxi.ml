@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../transformer.xsl"?>
 <owl:Ontology
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -7,11 +6,7 @@
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
 	<name>Jira Entwined Relational Anthology</name>
-	<author>
-		<a href="https://daxi.ml/person/jacob">
-			<span property="foaf:name">jacob whitford-bender</span>
-		</a>
-	</author>
+	<author>daxi</author>
 	<vann:preferredNamespacePrefix>jera</vann:preferredNamespacePrefix>
 	<version>0.1</version>
 	<created>2023-05-12</created>
@@ -19,17 +14,13 @@
 	<class class="skos:Concept" id="Domain">
 		<rdfs:label>Domain</rdfs:label>
 		<skos:definition>
-			<span>
-				A <a href="https://en.wikipedia.org/wiki/Domain_(software_engineering)">domain</a> is a functional theme,
-			</span>
+			A <a href="https://en.wikipedia.org/wiki/Domain_(software_engineering)">domain</a> is a functional theme,
 		</skos:definition>
 	</class>
 	<class class="skos:Concept" id="Ticket">
 		<rdfs:label>Ticket</rdfs:label>
 		<skos:definition>
-			<span>
-				A Ticket represents a unit of work. Theoretically, every change to the system should be documented here.
-			</span>
+			A Ticket represents a unit of work. Theoretically, every change to the system should be documented here.
 		</skos:definition>
 		<skos:editorialNote>
 			<ul>
@@ -41,38 +32,17 @@
 	</class>
 	<class class="skos:Concept" id="Commit">
 		<rdfs:label>Commit</rdfs:label>
-		<skos:definition>
-			<span>
-				A unit of work in the codebase.
-			</span>
-		</skos:definition>
-		<rdfs:subClassOf>
-			<url>http://www.w3.org/2004/02/skos/core#Concept</url>
-			<label>skos:Concept</label>
-		</rdfs:subClassOf>
+		<skos:definition>A unit of work in the codebase.</skos:definition>
 	</class>
 	<class class="skos:Concept" id="Test">
 		<rdfs:label>Test</rdfs:label>
 		<id>Test</id>
-		<skos:definition>
-			<span>
-				A test is an assertion about how the system should behave under given circumstances.
-			</span>
-		</skos:definition>
-		<skos:scopeNote>
-			<span>
-				This shouldn't be understood as an entire test, but rather a single assertion within that test. It's a specification of system behaviour.
-			</span>
-		</skos:scopeNote>
-		<skos:scopeNote>
-			<span>
-				RE: the question of atomaticity: we make no claims about how to draw the borders between suites, and simply model any existing data structure.
-			</span>
-		</skos:scopeNote>
+		<skos:definition>A test is an assertion about how the system should behave under given circumstances.</skos:definition>
+		<skos:scopeNote>This shouldn't be understood as an entire test, but rather a single assertion within that test. It's a specification of system behaviour.</skos:scopeNote>
+		<skos:scopeNote>RE: the question of atomaticity: we make no claims about how to draw the borders between suites, and simply model any existing data structure.</skos:scopeNote>
 	</class>
 	<class class="skos:Concept" id="TestSuite">
 		<rdfs:label>Test Suite</rdfs:label>
-		<id>TestSuite</id>
 		<skos:definition>
 			<span>
 				A test suite is the intersection of an ordered list of tests and related metadata.
@@ -82,14 +52,10 @@
 	<class id="TestRun" class="skos:Concept">
 		<rdfs:label>Test Run</rdfs:label>
 		<skos:definition>
-			<span>
-				A test run represents a particular run-through of a <a href="#TestSuite">Test Suite</a>.
-			</span>
+			A test run represents a particular run-through of a <a href="#TestSuite">Test Suite</a>.
 		</skos:definition>
 		<skos:editorialNote>
-			<span>
-				really no point in making one of these if you don't have a runner, a timestamp, and map over the <a href="Test">tests</a> in the test suite attaching passes and failures to them.
-			</span>
+			really no point in making one of these if you don't have a runner, a timestamp, and map over the <a href="Test">tests</a> in the test suite attaching passes and failures to them.
 		</skos:editorialNote>
 	</class>
 </owl:Ontology>

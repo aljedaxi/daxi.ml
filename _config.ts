@@ -5,12 +5,16 @@ import anchor from "https://jspm.dev/markdown-it-anchor"
 import toc from "https://jspm.dev/markdown-it-table-of-contents"
 import {readLines} from "https://deno.land/std@0.154.0/io/buffer.ts"
 import relations from "lume/plugins/relations.ts"
+import {parse} from "https://deno.land/x/xml/mod.ts"
 
 const ndjsonLoader = async function*(path: string) {
 	for await (const l of readLines(await Deno.open(path))) {
 		yield JSON.parse (l)
 	}
 }
+
+const xmlLoader = path => Deno.readTextFile(path).then(parse)
+const vocabLoader = xmlLoader
 
 const markdown = {
 	plugins: [
@@ -29,8 +33,9 @@ const markdown = {
 }
 const site = lume({src: './src', location: new URL('https://daxi.ml')}, {markdown});
 site.loadData (['.ndjson'], ndjsonLoader)
+site.loadData (['.xml'], xmlLoader)
+site.loadPages (['.vocab'], vocabLoader)
 site.copy ('public')
-site.copy ('vocab')
 site.use (jsx ({}))
 site.use (relations ({
 	foreignKeys: {
